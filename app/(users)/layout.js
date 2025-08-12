@@ -1,7 +1,7 @@
 import "./../globals.css";
 import Navigation from "@/app/(users)/components/navigation";
 
-import Footer from "@/app/(users)/components/Footer";
+import Footer from "@/app/(users)/components/footer";
 import { Poppins, Inter } from "next/font/google";
 // import { icons } from "lucide-react";
 
