@@ -71,41 +71,38 @@ const slides = [
   { src: '/video.mp4', isVideo: true },
 ];
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  if (!form.name || !form.phone || !form.course  ) {
-    setResponseMsg('Please fill in all required fields.');
-    return;
-  }
-  setLoading(true);
-  setResponseMsg('');
+export default function EnquiryForm() {
+  const [form, setForm] = useState({ name: '', phone: '', course: '', message: '' });
+  const [isPending, startTransition] = useTransition();
+  const [responseMsg, setResponseMsg] = useState('');
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  try {
-    // Auto switch between local & production API
-    const API_URL =
-      process.env.NODE_ENV === 'development'
-        ? 'http://localhost:5000/api/contact' // your local backend
-        : 'https://everydetaileducationserver.vercel.app/api/contact'; // prod backend
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-    const res = await fetch(API_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
-    });
-
-    const data = await res.json();
-    setResponseMsg(data.message || 'Something went wrong.');
-    if (data.success) {
-      setForm({ name: '', phone: '', email: '',  course: '', message: '' });
+  // FIX: Now posts to API route instead of server function
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.name || !form.phone || !form.course) {
+      setResponseMsg('Please fill in all required fields.');
+      return;
     }
-  } catch (err) {
-    console.error('Form submission error:', err);
-    setResponseMsg('Submission failed. Please try again.');
-  } finally {
-    setLoading(false);
-  }
-
-
+    setResponseMsg('');
+    startTransition(async () => {
+      try {
+        const res = await fetch("https://everydetaileducationserver.vercel.app/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(form),
+        });
+        const data = await res.json();
+        setResponseMsg(data.message);
+        if (data.success) setForm({ name: '', phone: '', course: '', message: '' });
+      } catch (err) {
+        console.error("Form submission error:", err);
+        setResponseMsg("Submission failed. Please try again.");
+      }
+    });
+  };
 
   return (
     <>
@@ -294,9 +291,6 @@ const handleSubmit = async (e) => {
             <input type="tel" name="phone" placeholder="Phone Number" value={form.phone} onChange={handleChange} required
               className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
             />
-             <input type="email" name="email" placeholder="Email Address" value={form.email} onChange={handleChange} required
-             className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
-             />
             <input type="text" name="course" placeholder="Interested Course (e.g. B.Tech, MBBS)" value={form.course} onChange={handleChange} required
               className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
             />
