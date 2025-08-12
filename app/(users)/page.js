@@ -73,7 +73,7 @@ const slides = [
 
 const handleSubmit = async (e) => {
   e.preventDefault();
-  if (!form.name || !form.phone || !form.course) {
+  if (!form.name || !form.phone || !form.course  ) {
     setResponseMsg('Please fill in all required fields.');
     return;
   }
@@ -96,7 +96,7 @@ const handleSubmit = async (e) => {
     const data = await res.json();
     setResponseMsg(data.message || 'Something went wrong.');
     if (data.success) {
-      setForm({ name: '', phone: '', course: '', message: '' });
+      setForm({ name: '', phone: '', email: '',  course: '', message: '' });
     }
   } catch (err) {
     console.error('Form submission error:', err);
@@ -294,6 +294,9 @@ const handleSubmit = async (e) => {
             <input type="tel" name="phone" placeholder="Phone Number" value={form.phone} onChange={handleChange} required
               className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
             />
+             <input type="email" name="email" placeholder="Email Address" value={form.email} onChange={handleChange} required
+             className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+             />
             <input type="text" name="course" placeholder="Interested Course (e.g. B.Tech, MBBS)" value={form.course} onChange={handleChange} required
               className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
             />
