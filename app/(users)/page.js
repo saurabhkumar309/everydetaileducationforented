@@ -71,38 +71,41 @@ const slides = [
   { src: '/video.mp4', isVideo: true },
 ];
 
-export default function EnquiryForm() {
-  const [form, setForm] = useState({ name: '', phone: '', course: '', message: '' });
-  const [isPending, startTransition] = useTransition();
-  const [responseMsg, setResponseMsg] = useState('');
-  const [activeIndex, setActiveIndex] = useState(0);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!form.name || !form.phone || !form.course) {
+    setResponseMsg('Please fill in all required fields.');
+    return;
+  }
+  setLoading(true);
+  setResponseMsg('');
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  try {
+    // Auto switch between local & production API
+    const API_URL =
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:5000/api/contact' // your local backend
+        : 'https://everydetaileducationserver.vercel.app/api/contact'; // prod backend
 
-  // FIX: Now posts to API route instead of server function
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!form.name || !form.phone || !form.course) {
-      setResponseMsg('Please fill in all required fields.');
-      return;
-    }
-    setResponseMsg('');
-    startTransition(async () => {
-      try {
-        const res = await fetch("https://everydetaileducationserver.vercel.app/api/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        });
-        const data = await res.json();
-        setResponseMsg(data.message);
-        if (data.success) setForm({ name: '', phone: '', course: '', message: '' });
-      } catch (err) {
-        console.error("Form submission error:", err);
-        setResponseMsg("Submission failed. Please try again.");
-      }
+    const res = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
     });
-  };
+
+    const data = await res.json();
+    setResponseMsg(data.message || 'Something went wrong.');
+    if (data.success) {
+      setForm({ name: '', phone: '', course: '', message: '' });
+    }
+  } catch (err) {
+    console.error('Form submission error:', err);
+    setResponseMsg('Submission failed. Please try again.');
+  } finally {
+    setLoading(false);
+  }
+
+
 
   return (
     <>
