@@ -42,7 +42,7 @@ const courseList = [
 
 const topColleges = [
   { name: 'IIT Bombay', category: 'Engineering', image: '/iit bombay.jpg' },
-  { name: 'NIT Trichy', category: 'Engineering', image: '/nit-trichy.png' },
+  { name: 'IIT MADRAS', category: 'Engineering', image: '/nit-trichy.png' },
   { name: 'IIM Bangalore', category: 'Management', image: '/IIM_Bangalore_Logo.png' },
   { name: 'IIT Delhi', category: 'Engineering', image: '/IIT Delhi logo.png' },
   { name: 'BITS Pilani', category: 'Engineering', image: '/BITS Pilani logo.png' },
@@ -406,8 +406,7 @@ export default function EnquiryForm() {
         <div className="max-w-7xl mx-auto">
           <motion.h2 className="text-4xl font-bold text-center text-green-800 mb-4"
             initial={{ opacity: 0, y: -30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            India&apos;s Top Colleges <span className="text-gray-700 text-lg">(2025 Ranking)</span>
-          </motion.h2>
+            India&apos;s Top Colleges</motion.h2>
           <p className="text-center text-gray-700 max-w-xl mx-auto mb-14 select-none">
             We are associated with the best institutions in the country.
           </p>
