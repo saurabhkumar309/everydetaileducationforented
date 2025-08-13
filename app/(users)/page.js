@@ -50,7 +50,7 @@ const topColleges = [
 ];
 
 const counsellingData = [
-  { name: 'JOSAA', image: '/JOSAA.png' }, { name: 'CSEB', image: '/CSEB.png' }, { name: 'UPTU', image: '/UPTU.png' },
+  { name: 'JOSAA', image: '/JOSAA.png' }, { name: 'CSAB', image: '/CSEB.png' }, { name: 'UPTU', image: '/UPTU.png' },
   { name: 'GGSIPU', image: '/JJ IPU-DELHI.png' }, { name: 'JAC Delhi', image: '/JAC Delhi.png' }, { name: 'MP-DTE', image: '/MP-DTE.png' },
   { name: 'Rajasthan REAP', image: '/Reap.png' }, { name: 'COMED-K', image: '/comedk.png' }, { name: 'MHT-CET', image: '/MHT-CET.png' },
   { name: 'WBJEE', image: '/WBJEE.png' }, { name: 'BCECE', image: '/bcece.png' }, { name: 'Odisha JEE', image: '/OJEE.png' },
@@ -63,7 +63,6 @@ const students = [
   { name: 'Shivang Kumar', college: 'IIT Ropar', image: '/Shivang.png', story: "Heyy,this is an amazing Consulatnacy in patna which gets you in a better college on the basis of your rank..You can do counselling from here.👍I have done my counselling from here and I have been in an amazing college."},
    { name: 'RAJ KUMAR', college: '(GKV),HARIDWAR', image: '/raj.png', story: "..if we talk about the review then quite a smooth process was there while counseling was going on ... faculties wore very supportive till the end ... process runs nicely to allot a proper seat to students at their respective CRL rank..." },
     { name: 'SHASHI', college: 'IIIT UNA ', image: '/shashi.png', story: "I  went through the college admission counseling(csab) process with Every detail  education and I am pleased to share my positive experience. The guidance provided was both comprehensive and insightful, helping me navigate the complex admissions landscape with clarity. The counselors were professional, responsive, and offered personalized advice that was instrumental in making informed decisions. I especially appreciated the thoroughness and dedication shown throughout the process. Thank you for your exceptional support and for making the college admission journey smoother and more manageable." },
-  
   { name: 'Ayush', college: 'NIT Agartala', image: '/ayush.png', story: "I am very thankful to every detail education and it's all team members for doing a fruitful councelling through which I got NIT Agartala.  When jee result is announced after that I become demotivated that I could not get any seat in nit collage through josaa but they gives me believe that you must get and currently I am in nit." },
 ];
 
