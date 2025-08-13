@@ -89,7 +89,7 @@ export default function EnquiryForm() {
     setResponseMsg('');
     startTransition(async () => {
       try {
-        const res = await fetch("https://everydetaileducationserver.vercel.app/api/contact", {
+        const res = await fetch("https://everydetaileducationserver.vercel.app/api/enquiry", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(form),
