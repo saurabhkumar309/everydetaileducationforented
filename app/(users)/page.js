@@ -285,7 +285,7 @@ export default function EnquiryForm() {
             initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}
             className="bg-white rounded-3xl shadow-2xl p-10 space-y-6" aria-label="Admission enquiry form"
           >
-            <input type="text" name="name" placeholder="Full Name" value={form.name} onChange={handleChange} required
+            <input type="text" name="name" placeholder="Full Name" value={form.Name} onChange={handleChange} required
               className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
             />
             <input type="tel" name="phone" placeholder="Phone Number" value={form.phone} onChange={handleChange} required
