@@ -72,7 +72,7 @@ const slides = [
 ];
 
 export default function EnquiryForm() {
-  const [form, setForm] = useState({ name: '', phone: '', course: '', message: '' });
+  const [form, setForm] = useState({ Name: '', phone: '', course: '', message: '' });
   const [isPending, startTransition] = useTransition();
   const [responseMsg, setResponseMsg] = useState('');
   const [activeIndex, setActiveIndex] = useState(0);
@@ -82,7 +82,7 @@ export default function EnquiryForm() {
   // FIX: Now posts to API route instead of server function
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!form.name || !form.phone || !form.course) {
+    if (!form.Name || !form.phone || !form.course) {
       setResponseMsg('Please fill in all required fields.');
       return;
     }
@@ -96,7 +96,7 @@ export default function EnquiryForm() {
         });
         const data = await res.json();
         setResponseMsg(data.message);
-        if (data.success) setForm({ name: '', phone: '', course: '', message: '' });
+        if (data.success) setForm({ Name: '', phone: '', course: '', message: '' });
       } catch (err) {
         console.error("Form submission error:", err);
         setResponseMsg("Submission failed. Please try again.");
