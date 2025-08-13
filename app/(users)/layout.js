@@ -3,7 +3,6 @@ import Navigation from "@/app/(users)/components/navigation";
 import Footer from "@/app/(users)/components/footer";
 import { Poppins, Inter } from "next/font/google";
 import Head from "next/head";
-
 // Google Fonts
 const poppins = Poppins({
   subsets: ["latin"],
@@ -78,6 +77,7 @@ export default function RootLayout({ children }) {
       <body className="font-inter bg-white text-gray-800">
         <Navigation />
         <main>{children}</main>
+       
         <Footer />
       </body>
     </html>

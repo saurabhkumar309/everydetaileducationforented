@@ -15,6 +15,7 @@ export default function BlogLayout({ children }) {
           <CareerAdviceSection />
           <CollegeReviewsSection />
           <ScholarshipsSection />
+        
         </div>
       </body>
     </html>

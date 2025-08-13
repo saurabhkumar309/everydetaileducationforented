@@ -24,7 +24,7 @@ const blogCategories = [
     description:
       'Learn how to apply to international universities, visa tips, and student experiences.',
     image: '/blog-abroad.png',
-    href: '#study-abroad',
+    href: '../video',
   },
   {
     title: 'Scholarships & Funding',

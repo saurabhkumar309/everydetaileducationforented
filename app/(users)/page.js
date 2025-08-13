@@ -6,7 +6,7 @@ import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import {
   FaChalkboardTeacher, FaUniversity, FaLaptopCode, FaGavel, FaUserMd, FaGraduationCap,
-  FaBriefcase, FaFlask, FaHandsHelping, FaMoneyCheckAlt, FaCertificate, FaGlobeAsia, FaUserGraduate
+  FaBriefcase, FaWhatsapp ,FaFlask,FaDownload, FaPlayCircle,FaHandsHelping, FaMoneyCheckAlt, FaCertificate, FaGlobeAsia, FaUserGraduate
 } from 'react-icons/fa';
 import { MdSchool } from 'react-icons/md';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,6 +16,18 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 // REMOVED: import { enquiryAction } from '@/app/(users)/admission.enquiry';
+const handleDownload = () => {
+   
+    const brochureUrl = '/brochures/admission-brochure.pdf'; // place under public/brochures
+    const link = document.createElement('a');
+    link.href = brochureUrl;
+    link.setAttribute('download', 'admission-brochure.pdf');
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
+
 
 const features = [
   { icon: <FaChalkboardTeacher className="text-5xl text-indigo-600" />, title: 'Expert Counseling', description: 'Our certified counselors guide you through every step — from career discovery to college selection.' },
@@ -66,13 +78,84 @@ const students = [
   { name: 'Ayush', college: 'NIT Agartala', image: '/ayush.png', story: "I am very thankful to every detail education and it's all team members for doing a fruitful councelling through which I got NIT Agartala.  When jee result is announced after that I become demotivated that I could not get any seat in nit collage through josaa but they gives me believe that you must get and currently I am in nit." },
 ];
 
+// Detailed video case studies
+  const caseStudies = [
+    {
+      id: 1,
+      studentName: 'Raj Kumar',
+      college: 'GKV, Haridwar',
+      videoUrl: 'https://www.youtube.com/embed/mwH-FkWWfP8',
+      description:
+        'Raj’s journey through counseling to securing a seat in his desired college with support at every step.',
+      highlights: [
+        'Initial counseling and career planning',
+        'Document preparation and application submission',
+        'Seat allotment process and final admission',
+      ],
+    },
+    {
+      id: 2,
+      studentName: 'Shashi',
+      college: 'IIIT UNA',
+      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_2',
+      description:
+        'Shashi’s comprehensive admission experience and personalized guidance leading to success.',
+      highlights: [
+        'Profile evaluation and exam preparation tips',
+        'Navigating college choices with counselor support',
+        'Admission counseling and seat confirmation',
+      ],
+    },
+    {
+      id: 3,
+      studentName: 'Ayush',
+      college: 'NIT Agartala',
+      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3',
+      description:
+        'Overcoming challenges post-JEE results and securing admission at NIT Agartala.',
+      highlights: [
+        'Motivation and continual support after initial setbacks',
+        'JOSAA counseling guidance',
+        'Admission and academic onboarding',
+      ],
+    },
+  ];
+
 const slides = [
   { src: '/banner1.png', isVideo: false },
   { src: '/banner2.png', isVideo: false },
   { src: '/banner3.png', isVideo: false },
   { src: '/video.mp4', isVideo: true },
 ];
+
+
+ 
+
 export default function EnquiryForm() {
+
+ const [isOpen, setIsOpen] = useState(false);
+
+  // Your WhatsApp number in international format without + or spaces
+  const phoneNumber = '919430018930';  // Replace with your actual number
+
+  // Optional default message when chat is opened
+  const defaultMessage = 'Hello! I need assistance with admissions.';
+
+  // WhatsApp chat URL
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+
+  // Toggles widget open state (optional if you want a popup else direct link)
+  const toggleWidget = () => {
+    setIsOpen(!isOpen);
+  };
+
+
+  const [selectedId, setSelectedId] = useState(caseStudies[0].id);
+  const selectedCase = caseStudies.find((cs) => cs.id === selectedId);
+
+
+
+
   const [form, setForm] = useState({ name: "", phone: "", course: "", message: "" });
   const [isPending, startTransition] = useTransition();
   const [responseMsg, setResponseMsg] = useState("");
@@ -281,19 +364,37 @@ export default function EnquiryForm() {
       <section className="py-20 px-6 bg-gradient-to-br from-[#d1fae5] via-[#ecfeff] to-[#bae6fd]">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
           {/* Left Side */}
-          <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-            <h2 className="text-4xl font-bold text-green-800 mb-6 leading-tight select-none">
-              📥 Apply For Admission Enquiry
-            </h2>
-            <p className="text-gray-700 text-lg mb-6 leading-relaxed select-none">
-              Fill in the form and our expert counselors will guide you to the best-fit course and college. Begin your academic journey with confidence!
-            </p>
-            <ul className="list-disc list-inside text-green-700 font-semibold space-y-3 select-none">
-              <li>🎓 Get Personalized Counseling</li>
-              <li>🏫 Admission Help in 100+ Top Colleges</li>
-              <li>🩺 MBBS, Engineering, Management & More</li>
-            </ul>
-          </motion.div>
+           <motion.div
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="text-4xl font-bold text-green-800 mb-6 leading-tight select-none">
+        📥 Apply For Admission Enquiry
+      </h2>
+
+      <p className="text-gray-700 text-lg mb-6 leading-relaxed select-none">
+        Fill in the form and our expert counselors will guide you to the best-fit course and college.
+        Begin your academic journey with confidence!
+      </p>
+
+      <ul className="list-disc list-inside text-green-700 font-semibold space-y-3 select-none">
+        <li>🎓 Get Personalized Counseling</li>
+        <li>🏫 Admission Help in 100+ Top Colleges</li>
+        <li>🩺 MBBS, Engineering, Management & More</li>
+      </ul>
+
+      {/* Download Button */}
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={handleDownload}
+        className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-sky-500 text-white text-lg font-medium rounded-lg shadow-lg hover:opacity-90 transition-all duration-300"
+      >
+        <FaDownload />
+        Download Brochure
+      </motion.button>
+    </motion.div>
           {/* Right Side - Form */}
           <motion.form
       onSubmit={handleSubmit}
@@ -368,40 +469,140 @@ export default function EnquiryForm() {
       </section>
 
       {/* Student Stories */}
-      <section className="relative py-20 px-6 bg-gradient-to-br from-[#f0f9ff] via-[#dbeafe] to-[#bfdbfe]">
-        <div className="absolute top-0 left-0 w-40 h-40 bg-green-200 rounded-full opacity-30 blur-2xl pointer-events-none"></div>
-        <div className="absolute bottom-0 right-0 w-52 h-52 bg-sky-300 rounded-full opacity-20 blur-3xl pointer-events-none"></div>
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <motion.h2 className="text-4xl md:text-5xl font-bold text-sky-800 mb-6"
-            initial={{ opacity: 0, y: -40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            🎓 Student Success Stories
-          </motion.h2>
-          <motion.p className="text-gray-700 mb-12 max-w-2xl mx-auto"
-            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-            Real stories of students who turned dreams into degrees with our guidance.
-          </motion.p>
-          <Swiper modules={[Autoplay, Pagination, Navigation]} spaceBetween={30}
-            slidesPerView={1} loop autoplay={{ delay: 3500, disableOnInteraction: false }}
-            pagination={{ clickable: true }} navigation
-            breakpoints={{ 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
-          >
-            {students.map((student, idx) => (
-              <SwiperSlide key={idx}>
-                <motion.div className="bg-white rounded-3xl shadow-lg border-t-4 border-green-600 p-6 cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                  initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.2 }} whileHover={{ scale: 1.03 }}>
-                  <div className="flex justify-center mb-4">
-                    <Image src={student.image} alt={student.name} width={100} height={100}
-                      className="rounded-full border-4 border-white shadow-lg object-cover" draggable={false} />
+       <section className="relative py-20 px-6 bg-gradient-to-br from-[#f0f9ff] via-[#dbeafe] to-[#bfdbfe]">
+      {/* Background soft shapes */}
+      <div className="absolute top-0 left-0 w-40 h-40 bg-green-200 rounded-full opacity-30 blur-2xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-52 h-52 bg-sky-300 rounded-full opacity-20 blur-3xl pointer-events-none"></div>
+
+      <div className="max-w-6xl mx-auto text-center relative z-10">
+        <motion.h2
+          className="text-4xl md:text-5xl font-bold text-sky-800 mb-6"
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          🎓 Student Success Stories
+        </motion.h2>
+
+        <motion.p
+          className="text-gray-700 mb-12 max-w-2xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          Real stories of students who turned dreams into degrees with our guidance.
+        </motion.p>
+
+        {/* Swiper slider for quick preview cards */}
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          spaceBetween={30}
+          slidesPerView={1}
+          loop
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          navigation
+          breakpoints={{
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="mb-16"
+        >
+          {students.map((student, idx) => (
+            <SwiperSlide key={idx}>
+              <motion.div
+                className="bg-white rounded-3xl shadow-lg border-t-4 border-green-600 p-6 cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.2 }}
+                whileHover={{ scale: 1.03 }}
+              >
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src={student.image}
+                    alt={student.name}
+                    width={100}
+                    height={100}
+                    className="rounded-full border-4 border-white shadow-lg object-cover"
+                    draggable={false}
+                  />
+                </div>
+                <h4 className="text-lg font-bold text-green-700">{student.name}</h4>
+                <p className="text-sky-600 text-sm mb-3">{student.college}</p>
+                <p className="text-gray-700 text-sm leading-relaxed">{student.story}</p>
+              </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Full details view */}
+        <div className="flex flex-col md:flex-row gap-10 text-left">
+          {/* Student List */}
+          <ul className="md:w-1/3 space-y-4">
+            {caseStudies.map(({ id, studentName, college }) => (
+              <li key={id}>
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  onClick={() => setSelectedId(id)}
+                  className={`w-full text-left p-4 rounded-lg border transition-all duration-300 shadow-sm ${
+                    selectedId === id
+                      ? 'bg-emerald-100 border-emerald-300 shadow-md'
+                      : 'bg-white hover:bg-emerald-50 border-gray-200'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <FaPlayCircle
+                      className={`text-xl ${
+                        selectedId === id
+                          ? 'text-emerald-600'
+                          : 'text-gray-400 group-hover:text-emerald-500'
+                      }`}
+                    />
+                    <div>
+                      <div className="text-lg font-semibold">{studentName}</div>
+                      <div className="text-sm text-gray-600">{college}</div>
+                    </div>
                   </div>
-                  <h4 className="text-lg font-bold text-green-700">{student.name}</h4>
-                  <p className="text-sky-600 text-sm mb-3">{student.college}</p>
-                  <p className="text-gray-700 text-sm leading-relaxed">{student.story}</p>
-                </motion.div>
-              </SwiperSlide>
+                </motion.button>
+              </li>
             ))}
-          </Swiper>
+          </ul>
+
+          {/* Selected Case Study Details */}
+          <motion.article
+            key={selectedCase.id}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="md:w-2/3 bg-white rounded-xl shadow-lg p-6 border border-gray-100"
+          >
+            <div className="overflow-hidden rounded-md shadow">
+              <iframe
+                className="w-full aspect-video"
+                src={selectedCase.videoUrl}
+                title={`${selectedCase.studentName} Success Story Video`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <h3 className="text-2xl font-bold text-emerald-700 mt-6">
+              {selectedCase.studentName} - {selectedCase.college}
+            </h3>
+            <p className="mt-3 text-gray-700">{selectedCase.description}</p>
+
+            <h4 className="mt-4 font-semibold text-gray-800">Highlights:</h4>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 mt-2">
+              {selectedCase.highlights.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          </motion.article>
         </div>
-      </section>
+      </div>
+    </section>
+  
 
       {/* Top Colleges */}
       <section className="bg-gradient-to-tr from-[#f0fdfa] via-[#dcfce7] to-[#a7f3d0] py-20 px-6 relative">
@@ -438,6 +639,20 @@ export default function EnquiryForm() {
           </div>
         </div>
       </section>
+
+
+       {/* Floating Button */}
+            <div
+              aria-label="Chat on WhatsApp"
+              title="Chat with us on WhatsApp"
+              className="fixed bottom-6 right-6 z-50 cursor-pointer bg-green-500 hover:bg-green-600 transition-colors duration-300 rounded-full p-4 shadow-lg flex items-center justify-center"
+              onClick={() => window.open(whatsappUrl, '_blank', 'noopener,noreferrer')}
+            >
+              <FaWhatsapp className="text-white text-3xl" aria-hidden="true" />
+              {/* Optionally, add animation or tooltip here */}
+            </div>
+      
+       
     </>
   );
 }
