@@ -41,7 +41,7 @@ const courseList = [
 ];
 
 const topColleges = [
-  { name: 'IIT Bombay', category: 'Engineering', image: '/iit bombay.jpg' },
+  { name: 'IIT Bombay', category: 'Engineering', image: '/iit bombay.jpeg' },
   { name: 'IIT MADRAS', category: 'Engineering', image: '/nit-trichy.png' },
   { name: 'IIM Bangalore', category: 'Management', image: '/IIM_Bangalore_Logo.png' },
   { name: 'IIT Delhi', category: 'Engineering', image: '/IIT Delhi logo.png' },
@@ -59,9 +59,12 @@ const counsellingData = [
 ];
 
 const students = [
-  { name: 'Divyanshu', college: 'NIT Patna', image: '/divyanshu.png', story: 'Thanks to Every Detail Education, I got my dream college. Their support during JoSAA was life-changing!' },
-  { name: 'Shivang Kumar', college: 'IIT Ropar', image: '/raj.png', story: 'From confusion to confidence—this team made IIT possible for me. Forever grateful!' },
-  { name: 'Ayush', college: 'NIT Agartala', image: '/ayush.png', story: 'After setbacks in JEE, their support gave me a second chance—and it worked. I’m now in NIT Agartala.' },
+  { name: 'Divyanshu', college: 'NIT Patna', image: '/divyanshu.png', story: "I am grateful to Every Detail Education for their invaluable support in securing my seat in the BTech program at NIT Patna. Their knowledgeable counselors provided personalized guidance on the admission process and entrance exams, making a significant difference in my preparation. I highly recommend their services to anyone seeking academic counseling. Thank you for your amazing support!" },
+  { name: 'Shivang Kumar', college: 'IIT Ropar', image: '/Shivang.png', story: "Heyy,this is an amazing Consulatnacy in patna which gets you in a better college on the basis of your rank..You can do counselling from here.👍I have done my counselling from here and I have been in an amazing college."},
+   { name: 'RAJ KUMAR', college: '(GKV),HARIDWAR', image: '/raj.png', story: "..if we talk about the review then quite a smooth process was there while counseling was going on ... faculties wore very supportive till the end ... process runs nicely to allot a proper seat to students at their respective CRL rank..." },
+    { name: 'SHASHI', college: 'IIIT UNA ', image: '/shashi.png', story: "I  went through the college admission counseling(csab) process with Every detail  education and I am pleased to share my positive experience. The guidance provided was both comprehensive and insightful, helping me navigate the complex admissions landscape with clarity. The counselors were professional, responsive, and offered personalized advice that was instrumental in making informed decisions. I especially appreciated the thoroughness and dedication shown throughout the process. Thank you for your exceptional support and for making the college admission journey smoother and more manageable." },
+  
+  { name: 'Ayush', college: 'NIT Agartala', image: '/ayush.png', story: "I am very thankful to every detail education and it's all team members for doing a fruitful councelling through which I got NIT Agartala.  When jee result is announced after that I become demotivated that I could not get any seat in nit collage through josaa but they gives me believe that you must get and currently I am in nit." },
 ];
 
 const slides = [
