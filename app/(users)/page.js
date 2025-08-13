@@ -75,28 +75,34 @@ export default function EnquiryForm() {
   const [form, setForm] = useState({ Name: '', phone: '', course: '', message: '' });
   const [isPending, startTransition] = useTransition();
   const [responseMsg, setResponseMsg] = useState('');
-  const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  // FIX: Now posts to API route instead of server function
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!form.Name || !form.phone || !form.course) {
+
+    // Validation (all fields required like backend expects)
+    if (!form.Name || !form.phone || !form.course || !form.message) {
       setResponseMsg('Please fill in all required fields.');
       return;
     }
+
     setResponseMsg('');
+
     startTransition(async () => {
       try {
         const res = await fetch("https://everydetaileducationserver.vercel.app/api/enquiry", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
+          body: JSON.stringify(form)
         });
         const data = await res.json();
         setResponseMsg(data.message);
-        if (data.success) setForm({ Name: '', phone: '', course: '', message: '' });
+        if (data.success) {
+          setForm({ Name: '', phone: '', course: '', message: '' });
+        }
       } catch (err) {
         console.error("Form submission error:", err);
         setResponseMsg("Submission failed. Please try again.");
@@ -281,35 +287,80 @@ export default function EnquiryForm() {
             </ul>
           </motion.div>
           {/* Right Side - Form */}
-          <motion.form onSubmit={handleSubmit}
-            initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}
-            className="bg-white rounded-3xl shadow-2xl p-10 space-y-6" aria-label="Admission enquiry form"
-          >
-            <input type="text" name="Name" placeholder="Full Name" value={form.Name} onChange={handleChange} required
-              className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
-            />
-            <input type="tel" name="phone" placeholder="Phone Number" value={form.phone} onChange={handleChange} required
-              className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
-            />
-            <input type="text" name="course" placeholder="Interested Course (e.g. B.Tech, MBBS)" value={form.course} onChange={handleChange} required
-              className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition" aria-required="true"
-            />
-            <textarea name="message" rows={4} placeholder="Additional Message" value={form.message} onChange={handleChange}
-              className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition resize-y"
-            ></textarea>
-            <button type="submit" disabled={isPending}
-              className={`w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition duration-200 ${isPending ? 'opacity-70 cursor-not-allowed' : ''}`}
-              aria-disabled={isPending}
-            >
-              {isPending ? 'Submitting...' : 'Submit Enquiry'}
-            </button>
-            {responseMsg && (
-              <p className={`text-sm font-medium mt-2 ${
-                responseMsg.toLowerCase().includes('success') ? 'text-green-600' : 'text-red-500'
-              } select-none`} aria-live="polite">{responseMsg}</p>
-            )}
-          </motion.form>
-        </div>
+          <motion.form
+      onSubmit={handleSubmit}
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6 }}
+      className="bg-white rounded-3xl shadow-2xl p-10 space-y-6"
+      aria-label="Admission enquiry form"
+    >
+      <input
+        type="text"
+        name="Name" // FIX: must match state & backend key
+        placeholder="Full Name"
+        value={form.Name}
+        onChange={handleChange}
+        required
+        className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+        aria-required="true"
+      />
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        value={form.phone}
+        onChange={handleChange}
+        required
+        className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+        aria-required="true"
+      />
+
+      <input
+        type="text"
+        name="course"
+        placeholder="Interested Course (e.g. B.Tech, MBBS)"
+        value={form.course}
+        onChange={handleChange}
+        required
+        className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+        aria-required="true"
+      />
+
+      <textarea
+        name="message"
+        rows={4}
+        placeholder="Additional Message"
+        value={form.message}
+        onChange={handleChange}
+        required
+        className="w-full text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 transition resize-y"
+      ></textarea>
+
+      <button
+        type="submit"
+        disabled={isPending}
+        className={`w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition duration-200 ${
+          isPending ? 'opacity-70 cursor-not-allowed' : ''
+        }`}
+        aria-disabled={isPending}
+      >
+        {isPending ? 'Submitting...' : 'Submit Enquiry'}
+      </button>
+
+      {responseMsg && (
+        <p
+          className={`text-sm font-medium mt-2 ${
+            responseMsg.toLowerCase().includes('success') ? 'text-green-600' : 'text-red-500'
+          } select-none`}
+          aria-live="polite"
+        >
+          {responseMsg}
+        </p>
+      )}
+    </motion.form>
+     </div>
       </section>
 
       {/* Student Stories */}
