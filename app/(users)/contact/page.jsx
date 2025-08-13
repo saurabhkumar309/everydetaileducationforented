@@ -45,7 +45,7 @@ export default function ContactUs() {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Submit form
+  // Submit form to merged /api/form endpoint
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -57,13 +57,16 @@ export default function ContactUs() {
       // Auto switch between local & production API
       const API_URL =
         process.env.NODE_ENV === "development"
-          ? "http://localhost:5000/api/contact"
-          : "https://everydetaileducationserver.vercel.app/api/contact";
+          ? "http://localhost:5000/api/form"
+          : "https://everydetaileducationserver.vercel.app/api/form";
+
+      // Add type: "contact" for merged backend
+      const payload = { ...formData, type: "contact" };
 
       const res = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       const data = await res.json();
