@@ -205,11 +205,8 @@ const medicalLinks = [
 
       {/* Bottom Bar */}
       <div className="text-center text-base sm:text-lg text-slate-500">
-        © 2025-2026 <span className="font-semibold text-emerald-700">Every Detail Educations</span>. All Rights Reserved.
+        © 2025 <span className="font-semibold text-emerald-700">Every Detail Educations</span>. All Rights Reserved.
         <br className="sm:hidden" />
-
-        <a href="/privacy-policy" className="hover:underline hover:text-emerald-700">Privacy Policy</a> |{' '}
-        <a href="/terms" className="hover:underline hover:text-emerald-700">Terms & Conditions</a>
       </div>
     </footer>
   );

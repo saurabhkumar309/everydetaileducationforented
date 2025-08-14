@@ -82,41 +82,41 @@ const students = [
   const caseStudies = [
     {
       id: 1,
-      studentName: 'Raj Kumar',
-      college: 'GKV, Haridwar',
-      videoUrl: 'https://www.youtube.com/embed/mwH-FkWWfP8',
+      studentName: 'DHIRU KUMAR',
+      college: 'NIT, PATNA',
+      videoUrl: 'https://www.youtube.com/embed/KGl3E_MspDY',
       description:
-        'Raj’s journey through counseling to securing a seat in his desired college with support at every step.',
+        'Dhiru, the first boy from his village to secure admission to NIT Patna through JoSAA 2025 Round 1, highlighting his journey, struggles, and family support.',
       highlights: [
-        'Initial counseling and career planning',
-        'Document preparation and application submission',
-        'Seat allotment process and final admission',
+       ' Dhiru became the first boy from his village to get admission to NIT Patna in JoSAA 2025 Round 1.',
+       'Faced challenges like limited resources, self-cooking, and studying under tough conditions, with strong family and brotherly support.',
+       'Professional counseling helped him choose the right college and branch, inspiring other rural students.'
       ],
     },
     {
       id: 2,
-      studentName: 'Shashi',
-      college: 'IIIT UNA',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_2',
+      studentName: 'ABHIJEET KUMAR',
+      college: 'NIT SIKKIM',
+      videoUrl: 'https://www.youtube.com/embed/FG2YMT33oPk',
       description:
-        'Shashi’s comprehensive admission experience and personalized guidance leading to success.',
+        'The video narrates a motivating student review about cracking NIT admission through persistent efforts, strategic preparation, and part-time work management before CSAB counseling 2025.',
       highlights: [
-        'Profile evaluation and exam preparation tips',
-        'Navigating college choices with counselor support',
-        'Admission counseling and seat confirmation',
+       ' A student from Muzaffarpur, Bihar, shares his journey of securing admission in NIT before the CSAB counseling rounds, despite working a part-time job.',
+       'He emphasizes consistent study, revision, and practicing previous year questions while balancing job responsibilities.',
+       'The student credits online coaching and mentorship for flexible learning, motivating others from similar backgrounds to aim for top engineering institutes.'
       ],
     },
     {
       id: 3,
-      studentName: 'Ayush',
-      college: 'NIT Agartala',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3',
+      studentName: 'YASHITA SHREYA',
+      college: 'NIT PATNA',
+      videoUrl: 'https://www.youtube.com/embed/BjTGjWeQdCA',
       description:
-        'Overcoming challenges post-JEE results and securing admission at NIT Agartala.',
+        'Yashita Shreya, a top-performing student from Bihar, sharing her reasons for choosing to study at NIT Patna ',
       highlights: [
-        'Motivation and continual support after initial setbacks',
-        'JOSAA counseling guidance',
-        'Admission and academic onboarding',
+        'Yashita Shreya, a high achiever from Bihar, decided to pursue engineering at NIT Patna instead of NIT Delhi due to better growth, placements, and a strong community feel at Patna.',
+        'She discusses her JEE Advanced preparation journey, emphasizing consistent question practice (PYQs), focusing on basics, time management, and avoiding distractions like excess YouTube content.',
+        'Family support played a crucial role throughout her preparation, and she advises aspirants to learn from past errors, prioritize weak subjects, and stay motivated with smart study strategies.'
       ],
     },
   ];
