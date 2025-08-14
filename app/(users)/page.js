@@ -18,7 +18,7 @@ import 'swiper/css/effect-fade';
 // REMOVED: import { enquiryAction } from '@/app/(users)/admission.enquiry';
 const handleDownload = () => {
    
-    const brochureUrl = '/brochures/admission-brochure.pdf'; // place under public/brochures
+    const brochureUrl = '/admission-brochure.pdf'; // place under public/brochures
     const link = document.createElement('a');
     link.href = brochureUrl;
     link.setAttribute('download', 'admission-brochure.pdf');
