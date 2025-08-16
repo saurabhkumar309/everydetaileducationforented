@@ -20,7 +20,7 @@ const engineeringStreams = [
   },
   {
     name: "CSE (Cloud Computing)",
-    url: "./Cloud-Computing",
+    url: "./Streams/Cloud-Computing",
     color: "#5d9cec",
     icon: "☁️",
     about: "Emphasizes scalable computing, cloud architecture & cloud security."
