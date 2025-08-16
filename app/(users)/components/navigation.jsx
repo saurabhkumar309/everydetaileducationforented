@@ -6,8 +6,8 @@ import Image from 'next/image'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [dropdownOpen, setDropdownOpen] = useState(null) // main desktop dropdown
-  const [subDropdownOpen, setSubDropdownOpen] = useState(null) // nested submenu (overview)
+  const [dropdownOpen, setDropdownOpen] = useState(null)
+  const [subDropdownOpen, setSubDropdownOpen] = useState(null)
   const [openMobileDropdown, setOpenMobileDropdown] = useState({})
   const [showNavbar, setShowNavbar] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
@@ -19,10 +19,10 @@ export default function Navigation() {
   // Main dropdown toggle
   const toggleDropdown = (name) => {
     setDropdownOpen(dropdownOpen === name ? null : name)
-    setSubDropdownOpen(null) // close nested when changing menu
+    setSubDropdownOpen(null)
   }
 
-  // Submenu toggle (only inside services)
+  // Submenu toggle inside "Services"
   const toggleSubDropdown = (name) => {
     setSubDropdownOpen(subDropdownOpen === name ? null : name)
   }
@@ -61,6 +61,9 @@ export default function Navigation() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  // Helper: Close mobile nav on link click
+  const closeMobileMenu = () => setIsOpen(false)
+
   return (
     <header
       className={`bg-white shadow-md fixed w-full z-50 border-b border-gray-200 transition-transform duration-300 
@@ -69,7 +72,7 @@ export default function Navigation() {
       <nav className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-4">
+          <Link href="/" onClick={closeMobileMenu} className="flex items-center space-x-4">
             <Image src="/logos.png" alt="logo" width={92} height={92} className="object-contain" />
             <div className="leading-tight text-gray-900">
               <p className="text-lg md:text-xl font-extrabold text-blue-700 tracking-wide">
@@ -83,14 +86,12 @@ export default function Navigation() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-10 lg:space-x-12 font-semibold text-gray-800 tracking-wide text-[16px] lg:text-[17px]" ref={dropdownRef}>
-            
             <li>
               <Link href="/" className="relative group hover:text-pink-600 transition-colors duration-300">
                 Home
                 <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-pink-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
-
             <li>
               <Link href="/about" className="relative group hover:text-pink-600 transition-colors duration-300">
                 About Us
@@ -129,19 +130,13 @@ export default function Navigation() {
                       ${subDropdownOpen === 'overview' ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-2 scale-95 pointer-events-none'}`}
                   >
                     <li>
-                      <Link href="/career" className="block px-5 py-2 hover:bg-pink-50 hover:text-pink-600 transition">
-                        Career Counselling
-                      </Link>
+                      <Link href="/career" className="block px-5 py-2 hover:bg-pink-50 hover:text-pink-600 transition">Career Counselling</Link>
                     </li>
                     <li>
-                      <Link href="/admission" className="block px-5 py-2 hover:bg-pink-50 hover:text-pink-600 transition">
-                        Admission Guidance
-                      </Link>
+                      <Link href="/admission" className="block px-5 py-2 hover:bg-pink-50 hover:text-pink-600 transition">Admission Guidance</Link>
                     </li>
                     <li>
-                      <Link href="/virtual" className="block px-5 py-2 hover:bg-pink-50 hover:text-pink-600 transition">
-                        Virtual Counselling
-                      </Link>
+                      <Link href="/virtual" className="block px-5 py-2 hover:bg-pink-50 hover:text-pink-600 transition">Virtual Counselling</Link>
                     </li>
                   </ul>
                 </li>
@@ -157,21 +152,9 @@ export default function Navigation() {
                 className={`absolute left-0 mt-3 bg-white shadow-2xl rounded-lg border border-gray-200 min-w-[240px] z-50 py-2 transform transition-all duration-300 ease-out
                   ${dropdownOpen === 'engineering' ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 -translate-y-2 scale-95 pointer-events-none'}`}
               >
-                <li>
-                  <Link href="/exams" className="block px-6 py-3 text-[15px] hover:bg-pink-50 hover:text-pink-600 transition">
-                    Exams
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/Streams" className="block px-6 py-3 text-[15px] hover:bg-pink-50 hover:text-pink-600 transition">
-                    Streams
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/colleges" className="block px-6 py-3 text-[15px] hover:bg-pink-50 hover:text-pink-600 transition">
-                    Colleges
-                  </Link>
-                </li>
+                <li><Link href="/exams" className="block px-6 py-3 text-[15px] hover:bg-pink-50 hover:text-pink-600 transition">Exams</Link></li>
+                <li><Link href="/Streams" className="block px-6 py-3 text-[15px] hover:bg-pink-50 hover:text-pink-600 transition">Streams</Link></li>
+                <li><Link href="/colleges" className="block px-6 py-3 text-[15px] hover:bg-pink-50 hover:text-pink-600 transition">Colleges</Link></li>
               </ul>
             </li>
 
@@ -181,7 +164,6 @@ export default function Navigation() {
                 <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-pink-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
-
             <li>
               <Link href="/contact" className="relative group hover:text-pink-600 transition-colors duration-300">
                 Contact
@@ -196,15 +178,11 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Menu (unchanged, still works fine with overview toggle) */}
+        {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-2 py-6 space-y-3 text-gray-800 text-lg font-semibold bg-white shadow-2xl rounded-lg border border-gray-200 animate-slide-down">
-            <Link href="/" onClick={() => setIsOpen(false)} className="block px-6 py-3 rounded hover:bg-pink-50">
-              Home
-            </Link>
-            <Link href="/about" onClick={() => setIsOpen(false)} className="block px-6 py-3 rounded hover:bg-pink-50">
-              About Us
-            </Link>
+          <div className="md:hidden mt-2 py-6 space-y-3 text-gray-800 text-lg font-semibold bg-white shadow-2xl rounded-lg border border-gray-200">
+            <Link href="/" onClick={closeMobileMenu} className="block px-6 py-3 rounded hover:bg-pink-50">Home</Link>
+            <Link href="/about" onClick={closeMobileMenu} className="block px-6 py-3 rounded hover:bg-pink-50">About Us</Link>
 
             {/* Services Mobile */}
             <div className="px-6">
@@ -216,8 +194,8 @@ export default function Navigation() {
               </button>
               <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openMobileDropdown['services'] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="pl-5 mt-2 border-l-2 border-pink-300 space-y-2">
-                  <Link href="/services" className="block py-2 text-base">University/College Selection</Link>
-                  <Link href="/creditcard" className="block py-2 text-base">Student Credit Card</Link>
+                  <Link href="/services" onClick={closeMobileMenu} className="block py-2 text-base">University/College Selection</Link>
+                  <Link href="/creditcard" onClick={closeMobileMenu} className="block py-2 text-base">Student Credit Card</Link>
                   <button
                     onClick={() => toggleMobileDropdown('overview')}
                     className="w-full py-2 flex justify-between text-base"
@@ -226,9 +204,9 @@ export default function Navigation() {
                   </button>
                   <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openMobileDropdown['overview'] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="pl-5 border-l-2 border-pink-200 space-y-1">
-                      <Link href="/career" className="block py-1 text-base">Career Counselling</Link>
-                      <Link href="/admission" className="block py-1 text-base">Admission Guidance</Link>
-                      <Link href="/virtual" className="block py-1 text-base">Virtual Counselling</Link>
+                      <Link href="/career" onClick={closeMobileMenu} className="block py-1 text-base">Career Counselling</Link>
+                      <Link href="/admission" onClick={closeMobileMenu} className="block py-1 text-base">Admission Guidance</Link>
+                      <Link href="/virtual" onClick={closeMobileMenu} className="block py-1 text-base">Virtual Counselling</Link>
                     </div>
                   </div>
                 </div>
@@ -245,15 +223,15 @@ export default function Navigation() {
               </button>
               <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openMobileDropdown['engineering'] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="pl-5 mt-2 border-l-2 border-pink-300 space-y-2">
-                  <Link href="/exams" className="block py-2 text-base">Exams</Link>
-                  <Link href="/Streams" className="block py-2 text-base">Streams</Link>
-                  <Link href="/colleges" className="block py-2 text-base">Colleges</Link>
+                  <Link href="/exams" onClick={closeMobileMenu} className="block py-2 text-base">Exams</Link>
+                  <Link href="/Streams" onClick={closeMobileMenu} className="block py-2 text-base">Streams</Link>
+                  <Link href="/colleges" onClick={closeMobileMenu} className="block py-2 text-base">Colleges</Link>
                 </div>
               </div>
             </div>
 
-            <Link href="/blog" onClick={() => setIsOpen(false)} className="block px-6 py-3 rounded hover:bg-pink-50">Blog</Link>
-            <Link href="/contact" onClick={() => setIsOpen(false)} className="block px-6 py-3 rounded hover:bg-pink-50">Contact</Link>
+            <Link href="/blog" onClick={closeMobileMenu} className="block px-6 py-3 rounded hover:bg-pink-50">Blog</Link>
+            <Link href="/contact" onClick={closeMobileMenu} className="block px-6 py-3 rounded hover:bg-pink-50">Contact</Link>
           </div>
         )}
       </nav>
