@@ -7,8 +7,8 @@ import Image from 'next/image'
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [openMobileDropdown, setOpenMobileDropdown] = useState({})
-  const [showNavbar, setShowNavbar] = useState(true) // NEW
-  const [lastScrollY, setLastScrollY] = useState(0)   // NEW
+  const [showNavbar, setShowNavbar] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
@@ -19,13 +19,12 @@ export default function Navigation() {
     }))
   }
 
-  // Handle scroll to hide on scroll down, show on scroll up
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setShowNavbar(false) // scrolling down
+        setShowNavbar(false)
       } else {
-        setShowNavbar(true)  // scrolling up
+        setShowNavbar(true)
       }
       setLastScrollY(window.scrollY)
     }
@@ -37,7 +36,7 @@ export default function Navigation() {
   return (
     <header
       className={`bg-white shadow-md fixed w-full z-50 border-b border-gray-200 transition-transform duration-300 
-      ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`} // NEW animation
+      ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center h-24">
@@ -65,10 +64,7 @@ export default function Navigation() {
               </Link>
             </li>
             {/* Services Dropdown - Desktop */}
-            <li
-              className="group relative cursor-pointer font-semibold"
-              onClick={(e) => e.preventDefault()}
-            >
+            <li className="group relative cursor-pointer font-semibold" onClick={(e) => e.preventDefault()}>
               <span className="flex items-center hover:text-pink-600 transition-colors duration-300 select-none">
                 Services <ChevronDown className="ml-1" size={18} />
               </span>
@@ -107,6 +103,31 @@ export default function Navigation() {
                 </li>
               </ul>
             </li>
+
+            {/* Engineering Dropdown - Desktop */}
+            <li className="group relative cursor-pointer font-semibold" onClick={(e) => e.preventDefault()}>
+              <span className="flex items-center hover:text-pink-600 transition-colors duration-300 select-none">
+                Engineering <ChevronDown className="ml-1" size={18} />
+              </span>
+              <ul className="absolute left-0 mt-2 bg-white shadow-2xl rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 min-w-[200px] z-50 border border-gray-200">
+                <li>
+                  <Link href="/exams" className="block px-6 py-3 hover:bg-pink-50 hover:text-pink-600 transition-colors duration-200 rounded-t-lg">
+                    Exams
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/Streams" className="block px-6 py-3 hover:bg-pink-50 hover:text-pink-600 transition-colors duration-200">
+                    Streams
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/colleges" className="block px-6 py-3 hover:bg-pink-50 hover:text-pink-600 transition-colors duration-200 rounded-b-lg">
+                    Colleges
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
             <li>
               <Link href="/blog" className="relative group hover:text-pink-600 transition-colors duration-300 font-semibold">
                 Blog
@@ -136,6 +157,8 @@ export default function Navigation() {
             <Link href="/about" onClick={() => setIsOpen(false)} className="block px-6 py-3 rounded hover:bg-pink-50 transition-colors duration-200">
               About Us
             </Link>
+
+            {/* Services - Mobile */}
             <div className="px-6">
               <button
                 onClick={() => toggleDropdown('services')}
@@ -173,6 +196,30 @@ export default function Navigation() {
                 </div>
               )}
             </div>
+
+            {/* Engineering - Mobile */}
+            <div className="px-6">
+              <button
+                onClick={() => toggleDropdown('engineering')}
+                className="w-full text-left py-3 font-semibold flex justify-between items-center rounded hover:bg-pink-50 transition-colors duration-200"
+              >
+                Engineering {openMobileDropdown['engineering'] ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
+              </button>
+              {openMobileDropdown['engineering'] && (
+                <div className="pl-5 mt-2 space-y-1 border-l-2 border-pink-300">
+                  <a href="/exams" onClick={() => setIsOpen(false)} className="block py-2 hover:text-pink-600 transition-colors duration-200">
+                    Exams
+                  </a>
+                  <a href="/Streams" onClick={() => setIsOpen(false)} className="block py-2 hover:text-pink-600 transition-colors duration-200">
+                    Streams
+                  </a>
+                  <a href="/colleges" onClick={() => setIsOpen(false)} className="block py-2 hover:text-pink-600 transition-colors duration-200">
+                    Colleges
+                  </a>
+                </div>
+              )}
+            </div>
+
             <Link href="/blog" onClick={() => setIsOpen(false)} className="block px-6 py-3 rounded hover:bg-pink-50 transition-colors duration-200">
               Blog
             </Link>
