@@ -67,6 +67,164 @@ const engineeringStreams = [
     icon: "💻",
     about: "Core computer science: software, algorithms, and system design."
   },
+  // EC/EE/EEE and related
+  {
+    name: "Electronics & Communication (ECE)",
+    url: "/Streams/ece",
+    color: "#f54260",
+    icon: "📡",
+    about: "Covers electronics, telecommunications, and embedded systems."
+  },
+   {
+        name: "Embedded Systems",
+        url: "/Streams/embedded-systems",
+        color: "#f54260",
+        icon: "📟",
+        about: "Focuses on microcontrollers, hardware-software integration."
+      },
+      {
+        name: "VLSI Design",
+        url: "/Streams/vlsi",
+        color: "#f54260",
+        icon: "🔲",
+        about: "Covers semiconductor fabrication, circuit and chip design."
+      },
+      {
+        name: "Signal Processing",
+        url: "/Streams/signal-processing",
+        color: "#f54260",
+        icon: "🎚️",
+        about: "Covers analog/digital signal analysis, filtering, and applications."
+      },
+  {
+    name: "Electrical Engineering (EE)",
+    url: "/Streams/ee",
+    color: "#f7b32b",
+    icon: "🔌",
+    about: "Focuses on electric circuits, machines, power systems & automation."
+  },
+  {
+        name: "Power Systems",
+        url: "/Streams/power-systems",
+        color: "#f7b32b",
+        icon: "⚡",
+        about: "Focuses on electric power generation, transmission, and distribution."
+      },
+      {
+        name: "Control Systems",
+        url: "/Streams/control-systems",
+        color: "#f7b32b",
+        icon: "🎛️",
+        about: "Deals with automation, system dynamics and robotics."
+      },
+  {
+    name: "Electrical & Electronics Engineering (EEE)",
+    url: "/Streams/eee",
+    color: "#1abc9c",
+    icon: "⚡",
+    about: "Combines electrical systems with electronics and control engineering."
+  },
+  // IT & Related
+  {
+    name: "Information Technology (IT)",
+    url: "/Streams/information-technology",
+    color: "#3a86ff",
+    icon: "🖥️",
+    about: "Emphasizes IT infrastructure, software & network management."
+  },
+  // Others
+  {
+    name: "Chemical Engineering",
+    url: "/Streams/chemical-engineering",
+    color: "#fb3640",
+    icon: "⚗️",
+    about: "Applies chemical principles to manufacturing and production."
+  },
+  {
+    name: "Biotechnology",
+    url: "/Streams/biotechnology",
+    color: "#00b894",
+    icon: "🧬",
+    about: "Integrates biology with technology for pharmaceuticals & research."
+  },
+   {
+        name: "Software Engineering",
+        url: "/Streams/software-engineering",
+        icon: "💾",
+        color: "#3a86ff",
+        about: "Focuses on methodologies for software system development."
+      },
+      {
+        name: "Information Security",
+        url: "/Streams/information-security",
+        icon: "🛡️",
+        color: "#3a86ff",
+        about: "Focuses on network, data, and application security."
+      },
+
+  {
+    name: "Biomedical Engineering",
+    url: "/Streams/biomedical-engineering",
+    color: "#ff758f",
+    icon: "🦾",
+    about: "Applies engineering to healthcare, medical devices & diagnostics."
+  },
+  {
+    name: "Aerospace Engineering",
+    url: "/Streams/aerospace-engineering",
+    color: "#2962ff",
+    icon: "✈️",
+    about: "Focuses on design & development of aircraft and spacecraft."
+  },
+  {
+    name: "Automobile Engineering",
+    url: "/Streams/automobile-engineering",
+    color: "#c0b283",
+    icon: "🚗",
+    about: "Designs, develops, tests & manufactures vehicles."
+  },
+  {
+    name: "Mechatronics Engineering",
+    url: "/Streams/mechatronics",
+    color: "#9b59b6",
+    icon: "🤖",
+    about: "Integrates mechanics, electronics, and computing for automation."
+  },
+  {
+    name: "Environmental Engineering",
+    url: "/Streams/environmental-engineering",
+    color: "#43aa8b",
+    icon: "🌱",
+    about: "Focuses on sustainable solutions for environmental challenges."
+  },
+  {
+    name: "Instrumentation Engineering",
+    url: "/Streams/instrumentation-engineering",
+    color: "#7766c6",
+    icon: "📈",
+    about: "Specializes in measurement, automation, and process control."
+  },
+  {
+    name: "Mining Engineering",
+    url: "/Streams/mining-engineering",
+    color: "#838b8b",
+    icon: "⛏️",
+    about: "Focuses on extraction and processing of minerals and resources."
+  },
+  {
+    name: "Marine Engineering",
+    url: "/Streams/marine-engineering",
+    color: "#0096c7",
+    icon: "🚢",
+    about: "Design and maintenance of ships, submarines, and marine systems."
+  },
+  {
+    name: "Petroleum Engineering",
+    url: "/Streams/petroleum-engineering",
+    color: "#8d5524",
+    icon: "🛢️",
+    about: "Deals with exploration and extraction of oil and gas resources."
+  }
 ];
 
 // Card UI Component
