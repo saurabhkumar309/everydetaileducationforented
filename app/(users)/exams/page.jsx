@@ -24,26 +24,26 @@ const exams = [
 ];
 
 const bgGradients = [
-  "from-[#0f2027] via-[#203a43] to-[#2c5364]",        // deep ocean blue
-  "from-[#ff4b1f] via-[#ff9068] to-[#ffc371]",        // sunset orange
-  "from-[#833ab4] via-[#fd1d1d] to-[#fcb045]",        // vibrant purple-orange
-  "from-[#00c6ff] via-[#0072ff]",                      // bright blue gradient
-  "from-[#11998e] via-[#38ef7d]",                      // teal green
-  "from-[#fc4a1a] via-[#f7b733]",                      // fire-orange yellow
-  "from-[#1f4037] via-[#99f2c8]",                      // forest green mint
-  "from-[#f7971e] via-[#ffd200]",                      // gold yellow gradient
-  "from-[#9d50bb] via-[#6e48aa]",                      // soft purple
-  "from-[#283c86] via-[#45a247]",                       // navy to green
+  "from-[#0f2027] via-[#203a43] to-[#2c5364]",         // deep ocean blue
+  "from-[#ff4b1f] via-[#ff9068] to-[#ffc371]",         // sunset orange
+  "from-[#833ab4] via-[#fd1d1d] to-[#fcb045]",         // vibrant purple-orange
+  "from-[#00c6ff] via-[#0072ff]",                       // bright blue gradient
+  "from-[#11998e] via-[#38ef7d]",                       // teal green
+  "from-[#fc4a1a] via-[#f7b733]",                       // fire-orange yellow
+  "from-[#1f4037] via-[#99f2c8]",                       // forest green mint
+  "from-[#f7971e] via-[#ffd200]",                       // gold yellow gradient
+  "from-[#9d50bb] via-[#6e48aa]",                       // soft purple
+  "from-[#283c86] via-[#45a247]",                        // navy to green
 ];
 
 export default function EngineeringExams() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 p-6 sm:p-12">
+    <main className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 p-6 sm:p-12">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl sm:text-6xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 drop-shadow-lg">
           Top Engineering Entrance Exams in India 2025
         </h1>
-        <p className="text-center mb-12 max-w-3xl mx-auto text-lg sm:text-xl text-gray-300">
+        <p className="text-center mb-12 max-w-3xl mx-auto text-lg sm:text-xl text-gray-700">
           Discover the comprehensive list of major online engineering entrance exams for 2025. Click any card below for detailed exam info, dates, eligibility, and application trends.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
