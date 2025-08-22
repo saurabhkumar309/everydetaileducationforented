@@ -122,10 +122,11 @@ const students = [
   ];
 
 const slides = [
-  { src: '/banner1.png', isVideo: false },
+
+  { src: '/video.mp4', isVideo: true },  // { src: '/banner1.png', isVideo: false },
   { src: '/banner2.png', isVideo: false },
   { src: '/banner3.png', isVideo: false },
-  { src: '/video.mp4', isVideo: true },
+
 ];
 
 

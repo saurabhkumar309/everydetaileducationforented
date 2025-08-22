@@ -57,7 +57,7 @@ export default function ContactUs() {
       // Auto switch between local & production API
       const API_URL =
         process.env.NODE_ENV === "development"
-          ? "http://localhost:5000/api/form"
+          ? "http://localhost:3001/api/form"
           : "https://everydetaileducationserver.vercel.app/api/form";
 
       // Add type: "contact" for merged backend
