@@ -12,7 +12,7 @@ export const colleges = [
   // Andhra Pradesh
 {
     name: "Indian Institute of Technology (IIT) Tirupati",
-    url: "",
+   // "",
     city: "Tirupati",
     state: "Andhra Pradesh",
     type: "Government",
@@ -22,7 +22,7 @@ export const colleges = [
   },
   {
     name: "Andhra University College of Engineering",
-    url: "",
+   // "",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
     type: "Government",
@@ -32,7 +32,7 @@ export const colleges = [
   },
   {
     name: "Jawaharlal Nehru Technological University (JNTU) Kakinada",
-    url: "",
+   // "",
     city: "Kakinada",
     state: "Andhra Pradesh",
     type: "Government",
@@ -42,7 +42,7 @@ export const colleges = [
   },
   {
     name: "JNTU College of Engineering, Anantapur",
-    url: "",
+   // "",
     city: "Anantapur",
     state: "Andhra Pradesh",
     type: "Government",
@@ -52,7 +52,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT) Andhra Pradesh",
-    url: "",
+   // "",
     city: "Tadepalligudem",
     state: "Andhra Pradesh",
     type: "Government",
@@ -62,7 +62,7 @@ export const colleges = [
   },
   {
     name: "University College of Engineering, Adikavi Nannaya University",
-    url: "",
+   // "",
     city: "Rajamahendravaram",
     state: "Andhra Pradesh",
     type: "Government",
@@ -72,7 +72,7 @@ export const colleges = [
   },
   {
     name: "JNTU College of Engineering, Vizianagaram",
-    url: "",
+   // "",
     city: "Vizianagaram",
     state: "Andhra Pradesh",
     type: "Government",
@@ -82,7 +82,7 @@ export const colleges = [
   },
   {
     name: "Sri Venkateswara University (SVU) College of Engineering, Tirupati",
-    url: "",
+   // "",
     city: "Tirupati",
     state: "Andhra Pradesh",
     type: "Government",
@@ -94,7 +94,7 @@ export const colleges = [
   // Leading Private Engineering Colleges
   {
     name: "KL University",
-    url: "",
+   // "",
     city: "Guntur",
     state: "Andhra Pradesh",
     type: "Private",
@@ -104,7 +104,7 @@ export const colleges = [
   },
   {
     name: "VIT-AP University",
-    url: "",
+   // "",
     city: "Amaravati",
     state: "Andhra Pradesh",
     type: "Private",
@@ -114,7 +114,7 @@ export const colleges = [
   },
   {
     name: "SRM University AP",
-    url: "",
+   // "",
     city: "Amaravati",
     state: "Andhra Pradesh",
     type: "Private",
@@ -124,7 +124,7 @@ export const colleges = [
   },
   {
     name: "Vignan's Foundation for Science, Technology and Research",
-    url: "",
+   // "",
     city: "Guntur",
     state: "Andhra Pradesh",
     type: "Private",
@@ -134,7 +134,7 @@ export const colleges = [
   },
   {
     name: "GITAM University (Deemed to be University)",
-    url: "",
+   // "",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
     type: "Private",
@@ -144,7 +144,7 @@ export const colleges = [
   },
   {
     name: "VR Siddhartha Engineering College",
-    url: "",
+   // "",
     city: "Vijayawada",
     state: "Andhra Pradesh",
     type: "Private",
@@ -154,7 +154,7 @@ export const colleges = [
   },
   {
     name: "GMR Institute of Technology",
-    url: "",
+   // "",
     city: "Rajam",
     state: "Andhra Pradesh",
     type: "Private",
@@ -164,7 +164,7 @@ export const colleges = [
   },
   {
     name: "Ideal Institute of Technology",
-    url: "",
+   // "",
     city: "Kakinada",
     state: "Andhra Pradesh",
     type: "Private",
@@ -174,7 +174,7 @@ export const colleges = [
   },
   {
     name: "PACE Institute of Technology & Sciences",
-    url: "",
+   // "",
     city: "Ongole",
     state: "Andhra Pradesh",
     type: "Private",
@@ -186,7 +186,7 @@ export const colleges = [
   // District-wise Key Engineering Colleges
   {
     name: "JNTU College of Engineering, Anantapur",
-    url: "",
+   // "",
     city: "Anantapur",
     state: "Andhra Pradesh",
     type: "Government",
@@ -196,7 +196,7 @@ export const colleges = [
   },
   {
     name: "Sri Venkateswara University (SVU) College of Engineering",
-    url: "",
+   // "",
     city: "Tirupati",
     state: "Andhra Pradesh",
     type: "Government",
@@ -206,7 +206,7 @@ export const colleges = [
   },
   {
     name: "JNTU College of Engineering, Kakinada",
-    url: "",
+   // "",
     city: "Kakinada",
     state: "Andhra Pradesh",
     type: "Government",
@@ -216,7 +216,7 @@ export const colleges = [
   },
   {
     name: "KL University",
-    url: "",
+   // "",
     city: "Guntur",
     state: "Andhra Pradesh",
     type: "Private",
@@ -226,7 +226,7 @@ export const colleges = [
   },
   {
     name: "Vignan's Foundation for Science and Technology",
-    url: "",
+   // "",
     city: "Guntur",
     state: "Andhra Pradesh",
     type: "Private",
@@ -236,7 +236,7 @@ export const colleges = [
   },
   {
     name: "VR Siddhartha Engineering College",
-    url: "",
+   // "",
     city: "Vijayawada",
     state: "Andhra Pradesh",
     type: "Private",
@@ -246,7 +246,7 @@ export const colleges = [
   },
   {
     name: "G. Pulla Reddy Engineering College",
-    url: "",
+   // "",
     city: "Kurnool",
     state: "Andhra Pradesh",
     type: "Private",
@@ -256,7 +256,7 @@ export const colleges = [
   },
   {
     name: "Brahmaiah College of Engineering",
-    url: "",
+   // "",
     city: "Nellore",
     state: "Andhra Pradesh",
     type: "Private",
@@ -266,7 +266,7 @@ export const colleges = [
   },
   {
     name: "Andhra University College of Engineering",
-    url: "",
+   // "",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
     type: "Government",
@@ -276,7 +276,7 @@ export const colleges = [
   },
   {
     name: "GITAM University",
-    url: "",
+   // "",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
     type: "Private",
@@ -286,7 +286,7 @@ export const colleges = [
   },
   {
     name: "JNTU College of Engineering, Vizianagaram",
-    url: "",
+   // "",
     city: "Vizianagaram",
     state: "Andhra Pradesh",
     type: "Government",
@@ -296,7 +296,7 @@ export const colleges = [
   },
   {
     name: "Sagi Ramakrishna Raju (SRKR) Engineering College",
-    url: "",
+   // "",
     city: "West Godavari",
     state: "Andhra Pradesh",
     type: "Private",
@@ -308,7 +308,7 @@ export const colleges = [
    // Government
   {
     name: "Indian Institute of Technology (IIT), Patna",
-    url: "https://www.geniuseducon.com/college-details.php/indian-institute-of-technology-664c6ed9dc611",
+   // "./indian-institute-of-technology-664c6ed9dc611",
     city: "Patna",
     state: "Bihar",
     type: "Government",
@@ -318,7 +318,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT), Patna",
-    url: "https://www.geniuseducon.com/college-details.php/national-institute-of-technology-664c6ed9db9ab",
+   // "./national-institute-of-technology-664c6ed9db9ab",
     city: "Patna",
     state: "Bihar",
     type: "Government",
@@ -328,7 +328,7 @@ export const colleges = [
   },
   {
     name: "Muzaffarpur Institute of Technology",
-    url: "https://www.geniuseducon.com/college-details.php/muzaffarpur-institute-of-technology-664c6ed9dcb7f",
+   // "./muzaffarpur-institute-of-technology-664c6ed9dcb7f",
     city: "Muzaffarpur",
     state: "Bihar",
     type: "Government",
@@ -338,7 +338,7 @@ export const colleges = [
   },
   {
     name: "Bakhtiyarpur College of Engineering",
-    url: "https://www.geniuseducon.com/college-details.php/bakhtiyarpur-college-of-engineering-664c6ed9db09a",
+   // "./bakhtiyarpur-college-of-engineering-664c6ed9db09a",
     city: "Patna",
     state: "Bihar",
     type: "Government",
@@ -348,7 +348,7 @@ export const colleges = [
   },
   {
     name: "Gaya College of Engineering",
-    url: "",
+   // "",
     city: "Gaya",
     state: "Bihar",
     type: "Government",
@@ -358,7 +358,7 @@ export const colleges = [
   },
   {
     name: "Darbhanga College of Engineering",
-    url: "",
+   // "",
     city: "Darbhanga",
     state: "Bihar",
     type: "Government",
@@ -368,7 +368,7 @@ export const colleges = [
   },
   {
     name: "Loknayak Jai Prakash Institute of Technology",
-    url: "",
+   // "",
     city: "Chhapra",
     state: "Bihar",
     type: "Government",
@@ -378,7 +378,7 @@ export const colleges = [
   },
   {
     name: "Bhagalpur College of Engineering",
-    url: "https://www.geniuseducon.com/college-details.php/bhagalpur-college-of-engineering-664c6ed9db506",
+   // "./bhagalpur-college-of-engineering-664c6ed9db506",
     city: "Bhagalpur",
     state: "Bihar",
     type: "Government",
@@ -388,7 +388,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Bhojpur",
-    url: "",
+   // "",
     city: "Bhojpur",
     state: "Bihar",
     type: "Government",
@@ -398,7 +398,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Vaishali",
-    url: "",
+   // "",
     city: "Vaishali",
     state: "Bihar",
     type: "Government",
@@ -408,7 +408,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Purnea",
-    url: "",
+   // "",
     city: "Purnea",
     state: "Bihar",
     type: "Government",
@@ -418,7 +418,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Kaimur",
-    url: "",
+   // "",
     city: "Kaimur",
     state: "Bihar",
     type: "Government",
@@ -428,7 +428,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Madhubani",
-    url: "",
+   // "",
     city: "Madhubani",
     state: "Bihar",
     type: "Government",
@@ -438,7 +438,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Supaul",
-    url: "",
+   // "",
     city: "Supaul",
     state: "Bihar",
     type: "Government",
@@ -448,7 +448,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Jamui",
-    url: "",
+   // "",
     city: "Jamui",
     state: "Bihar",
     type: "Government",
@@ -458,7 +458,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Sheikhpura",
-    url: "",
+   // "",
     city: "Sheikhpura",
     state: "Bihar",
     type: "Government",
@@ -468,7 +468,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Siwan",
-    url: "",
+   // "",
     city: "Siwan",
     state: "Bihar",
     type: "Government",
@@ -478,7 +478,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Saharsa",
-    url: "",
+   // "",
     city: "Saharsa",
     state: "Bihar",
     type: "Government",
@@ -488,7 +488,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Jehanabad",
-    url: "",
+   // "",
     city: "Jehanabad",
     state: "Bihar",
     type: "Government",
@@ -498,7 +498,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Nalanda",
-    url: "",
+   // "",
     city: "Nalanda",
     state: "Bihar",
     type: "Government",
@@ -508,7 +508,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Kishanganj",
-    url: "",
+   // "",
     city: "Kishanganj",
     state: "Bihar",
     type: "Government",
@@ -518,7 +518,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Aurangabad",
-    url: "",
+   // "",
     city: "Aurangabad",
     state: "Bihar",
     type: "Government",
@@ -528,7 +528,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Munger",
-    url: "",
+   // "",
     city: "Munger",
     state: "Bihar",
     type: "Government",
@@ -538,7 +538,7 @@ export const colleges = [
   },
   {
     name: "Netaji Subhas Institute of Technology, Patna",
-    url: "",
+   // "",
     city: "Patna",
     state: "Bihar",
     type: "Government",
@@ -548,7 +548,7 @@ export const colleges = [
   },
   {
     name: "Shri Phanishwar Nath Renu Engineering College, Araria",
-    url: "",
+   // "",
     city: "Araria",
     state: "Bihar",
     type: "Government",
@@ -560,7 +560,7 @@ export const colleges = [
   // Major Private and PPP
   {
     name: "Birla Institute of Technology, Patna Extension Centre (BIT Patna)",
-    url: "",
+   // "",
     city: "Patna",
     state: "Bihar",
     type: "Private/PPP",
@@ -570,7 +570,7 @@ export const colleges = [
   },
   {
     name: "IIIT Bhagalpur (Indian Institute of Information Technology)",
-    url: "https://www.geniuseducon.com/college-details.php/indian-institute-of-information-technology-664c6ed9dbf83",
+   // "./indian-institute-of-information-technology-664c6ed9dbf83",
     city: "Bhagalpur",
     state: "Bihar",
     type: "PPP",
@@ -580,7 +580,7 @@ export const colleges = [
   },
   {
     name: "Amity University, Patna",
-    url: "",
+   // "",
     city: "Patna",
     state: "Bihar",
     type: "Private",
@@ -590,7 +590,7 @@ export const colleges = [
   },
   {
     name: "Dr. C.V. Raman University, Bihar",
-    url: "",
+   // "",
     city: "Vaishali",
     state: "Bihar",
     type: "Private",
@@ -600,7 +600,7 @@ export const colleges = [
   },
   {
     name: "Maulana Azad College of Engineering & Technology, Patna",
-    url: "",
+   // "",
     city: "Patna",
     state: "Bihar",
     type: "Private",
@@ -610,7 +610,7 @@ export const colleges = [
   },
   {
     name: "KK University, Nalanda",
-    url: "",
+   // "",
     city: "Nalanda",
     state: "Bihar",
     type: "Private",
@@ -620,7 +620,7 @@ export const colleges = [
   },
   {
     name: "Sandip University, Madhubani",
-    url: "https://www.geniuseducon.com/college-details.php/sandip-university-664c6eda00f02",
+   // "./sandip-university-664c6eda00f02",
     city: "Madhubani",
     state: "Bihar",
     type: "Private",
@@ -630,7 +630,7 @@ export const colleges = [
   },
   {
     name: "R.P. Sharma Institute of Technology, Patna",
-    url: "https://www.geniuseducon.com/college-details.php/r.p.-sharma-institute-of-technology-664c6ed9dd23a",
+   // "./r.p.-sharma-institute-of-technology-664c6ed9dd23a",
     city: "Patna",
     state: "Bihar",
     type: "Private",
@@ -640,7 +640,7 @@ export const colleges = [
   },
   {
     name: "Vidya Vihar Institute of Technology",
-    url: "",
+   // "",
     city: "Purnea",
     state: "Bihar",
     type: "Private",
@@ -650,7 +650,7 @@ export const colleges = [
   },
   {
     name: "Sityog Institute of Technology",
-    url: "https://www.geniuseducon.com/college-details.php/sityog-institute-of-technology-664c6ed9ddec3",
+   // "./sityog-institute-of-technology-664c6ed9ddec3",
     city: "Aurangabad",
     state: "Bihar",
     type: "Private",
@@ -660,7 +660,7 @@ export const colleges = [
   },
   {
     name: "Adwaita Mission Institute of Technology, Banka",
-    url: "",
+   // "",
     city: "Banka",
     state: "Bihar",
     type: "Private",
@@ -673,7 +673,7 @@ export const colleges = [
   // Top Government Engineering Colleges
   {
     name: "Indian Institute of Technology (IIT) Bhilai",
-    url: "",
+   // "",
     city: "Bhilai",
     state: "Chhattisgarh",
     type: "Government",
@@ -683,7 +683,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT) Raipur",
-    url: "",
+   // "",
     city: "Raipur",
     state: "Chhattisgarh",
     type: "Government",
@@ -693,7 +693,7 @@ export const colleges = [
   },
   {
     name: "International Institute of Information Technology (IIIT) Naya Raipur",
-    url: "",
+   // "",
     city: "Naya Raipur",
     state: "Chhattisgarh",
     type: "Government",
@@ -703,7 +703,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Raipur",
-    url: "",
+   // "",
     city: "Raipur",
     state: "Chhattisgarh",
     type: "Government",
@@ -713,7 +713,7 @@ export const colleges = [
   },
   {
     name: "Guru Ghasidas Vishwavidyalaya, Bilaspur",
-    url: "",
+   // "",
     city: "Bilaspur",
     state: "Chhattisgarh",
     type: "Government",
@@ -723,7 +723,7 @@ export const colleges = [
   },
   {
     name: "Bhilai Institute of Technology (BIT), Durg",
-    url: "",
+   // "",
     city: "Durg",
     state: "Chhattisgarh",
     type: "Government",
@@ -733,7 +733,7 @@ export const colleges = [
   },
   {
     name: "Chhattisgarh Swami Vivekanand Technical University (CSVTU), Bhilai",
-    url: "",
+   // "",
     city: "Bhilai",
     state: "Chhattisgarh",
     type: "Government",
@@ -745,7 +745,7 @@ export const colleges = [
   // Notable Private Engineering Colleges
   {
     name: "Rungta College of Engineering and Technology, Bhilai",
-    url: "",
+   // "",
     city: "Bhilai",
     state: "Chhattisgarh",
     type: "Private",
@@ -755,7 +755,7 @@ export const colleges = [
   },
   {
     name: "OP Jindal University (OPJU), Raigarh",
-    url: "",
+   // "",
     city: "Raigarh",
     state: "Chhattisgarh",
     type: "Private",
@@ -765,7 +765,7 @@ export const colleges = [
   },
   {
     name: "Amity University, Raipur",
-    url: "",
+   // "",
     city: "Raipur",
     state: "Chhattisgarh",
     type: "Private",
@@ -775,7 +775,7 @@ export const colleges = [
   },
   {
     name: "Shri Shankaracharya Technical Campus (SSTC), Bhilai",
-    url: "",
+   // "",
     city: "Bhilai",
     state: "Chhattisgarh",
     type: "Private",
@@ -785,7 +785,7 @@ export const colleges = [
   },
   {
     name: "Raipur Institute of Technology (RIT), Raipur",
-    url: "",
+   // "",
     city: "Raipur",
     state: "Chhattisgarh",
     type: "Private",
@@ -795,7 +795,7 @@ export const colleges = [
   },
   {
     name: "C.V. Raman College of Engineering, Bilaspur",
-    url: "",
+   // "",
     city: "Bilaspur",
     state: "Chhattisgarh",
     type: "Private",
@@ -805,7 +805,7 @@ export const colleges = [
   },
   {
     name: "MATS University, Raipur",
-    url: "",
+   // "",
     city: "Raipur",
     state: "Chhattisgarh",
     type: "Private",
@@ -815,7 +815,7 @@ export const colleges = [
   },
   {
     name: "Sanjay Rungta Group of Institutions, Bhilai",
-    url: "",
+   // "",
     city: "Bhilai",
     state: "Chhattisgarh",
     type: "Private",
@@ -825,7 +825,7 @@ export const colleges = [
   },
   {
     name: "SSGI, Bhilai",
-    url: "",
+   // "",
     city: "Bhilai",
     state: "Chhattisgarh",
     type: "Private",
@@ -835,7 +835,7 @@ export const colleges = [
   },
   {
     name: "SSIPMT, Raipur",
-    url: "",
+   // "",
     city: "Raipur",
     state: "Chhattisgarh",
     type: "Private",
@@ -845,7 +845,7 @@ export const colleges = [
   },
   {
     name: "RCET, Bhilai",
-    url: "",
+   // "",
     city: "Bhilai",
     state: "Chhattisgarh",
     type: "Private",
@@ -855,7 +855,7 @@ export const colleges = [
   },
   {
     name: "RITEE Group of Institutions, Raipur",
-    url: "",
+   // "",
     city: "Raipur",
     state: "Chhattisgarh",
     type: "Private",
@@ -868,7 +868,7 @@ export const colleges = [
 // Major Government & Centrally Funded Engineering Colleges
   {
     name: "Indian Institute of Technology (IIT) Delhi",
-    url: "https://www.geniuseducon.com/college-details.php/indian-institute-of-technology-664c6ed9dc611",
+   // "./indian-institute-of-technology-664c6ed9dc611",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -878,7 +878,7 @@ export const colleges = [
   },
   {
     name: "Delhi Technological University (DTU)",
-    url: "https://www.geniuseducon.com/college-details.php/delhi-technological-university-(dtu)--664c6ed9f1007",
+   // "./delhi-technological-university-(dtu)--664c6ed9f1007",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -888,7 +888,7 @@ export const colleges = [
   },
   {
     name: "Netaji Subhas University of Technology (NSUT)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -898,7 +898,7 @@ export const colleges = [
   },
   {
     name: "Jamia Millia Islamia – Faculty of Engineering and Technology",
-    url: "https://www.geniuseducon.com/college-details.php/jamia-millia-islamia-664c6ed9f1569",
+   // "./jamia-millia-islamia-664c6ed9f1569",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -908,7 +908,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT) Delhi",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -918,7 +918,7 @@ export const colleges = [
   },
   {
     name: "Indraprastha Institute of Information Technology (IIIT) Delhi",
-    url: "https://www.iiitd.ac.in/",
+   // "https://www.iiitd.ac.in/",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -928,7 +928,7 @@ export const colleges = [
   },
   {
     name: "Indira Gandhi Delhi Technical University for Women (IGDTUW)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -938,7 +938,7 @@ export const colleges = [
   },
   {
     name: "Guru Gobind Singh Indraprastha University (GGSIPU)",
-    url: "http://www.ipu.ac.in/",
+   // "http://www.ipu.ac.in/",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -948,7 +948,7 @@ export const colleges = [
   },
   {
     name: "GB Pant Government Engineering College",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Government",
@@ -960,7 +960,7 @@ export const colleges = [
   // Top Private and GGSIPU-Affiliated Engineering Colleges
   {
     name: "Maharaja Agrasen Institute of Technology (MAIT)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -970,7 +970,7 @@ export const colleges = [
   },
   {
     name: "Maharaja Surajmal Institute of Technology (MSIT)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -980,7 +980,7 @@ export const colleges = [
   },
   {
     name: "Bharati Vidyapeeth’s College of Engineering (BVCOE)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -990,7 +990,7 @@ export const colleges = [
   },
   {
     name: "Bhagwan Parshuram Institute of Technology (BPIT)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -1000,7 +1000,7 @@ export const colleges = [
   },
   {
     name: "HMR Institute of Technology and Management",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -1010,7 +1010,7 @@ export const colleges = [
   },
   {
     name: "Ambedkar Institute of Advanced Communication Technologies and Research",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -1020,7 +1020,7 @@ export const colleges = [
   },
   {
     name: "Northern India Engineering College (NIEC)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -1030,7 +1030,7 @@ export const colleges = [
   },
   {
     name: "Amity School of Engineering and Technology",
-    url: "",
+   // "",
     city: "Delhi NCR",
     state: "Delhi",
     type: "Private",
@@ -1040,7 +1040,7 @@ export const colleges = [
   },
   {
     name: "JIMS Engineering Management Technical Campus (Greater Noida/Delhi NCR)",
-    url: "",
+   // "",
     city: "Greater Noida",
     state: "Uttar Pradesh",
     type: "Private",
@@ -1050,7 +1050,7 @@ export const colleges = [
   },
   {
     name: "Vivekananda Institute of Professional Studies (VIPS-TC)",
-    url: "",
+   // "",
     city: "Delhi",
     state: "Delhi",
     type: "Private",
@@ -1063,7 +1063,7 @@ export const colleges = [
     // Top Government and Premier Institutes
   {
     name: "Indian Institute of Technology (IIT) Gandhinagar",
-    url: "https://www.geniuseducon.com/college-details.php/indian-institute-of-technology-gandhinagar-664c6ed9d9f6e",
+   // "./indian-institute-of-technology-gandhinagar-664c6ed9d9f6e",
     city: "Gandhinagar",
     state: "Gujarat",
     type: "Government",
@@ -1073,7 +1073,7 @@ export const colleges = [
   },
   {
     name: "Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat",
-    url: "https://www.geniuseducon.com/college-details.php/sardar-vallabhbhai-national-institute-of-technology--svnit-sur-664c6ed9d9f32",
+   // "./sardar-vallabhbhai-national-institute-of-technology--svnit-sur-664c6ed9d9f32",
     city: "Surat",
     state: "Gujarat",
     type: "Government",
@@ -1083,7 +1083,7 @@ export const colleges = [
   },
   {
     name: "Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT), Gandhinagar",
-    url: "https://www.geniuseducon.com/college-details.php/dhirubhai-institute-of-information-and-communication-technology-(da-iict)-664c6ed9d95ac",
+   // "./dhirubhai-institute-of-information-and-communication-technology-(da-iict)-664c6ed9d95ac",
     city: "Gandhinagar",
     state: "Gujarat",
     type: "Government",
@@ -1093,7 +1093,7 @@ export const colleges = [
   },
   {
     name: "Pandit Deendayal Energy University (PDEU), Gandhinagar",
-    url: "https://www.geniuseducon.com/college-details.php/-pandit-deendayal-petroleum-university--664c6ed9da2fa",
+   // "./-pandit-deendayal-petroleum-university--664c6ed9da2fa",
     city: "Gandhinagar",
     state: "Gujarat",
     type: "Government",
@@ -1103,7 +1103,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Information Technology (IIIT) Vadodara",
-    url: "",
+   // "",
     city: "Vadodara",
     state: "Gujarat",
     type: "Government",
@@ -1113,7 +1113,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Information Technology (IIIT) Surat",
-    url: "",
+   // "",
     city: "Surat",
     state: "Gujarat",
     type: "Government",
@@ -1123,7 +1123,7 @@ export const colleges = [
   },
   {
     name: "L.D. College of Engineering",
-    url: "",
+   // "",
     city: "Ahmedabad",
     state: "Gujarat",
     type: "Government",
@@ -1133,7 +1133,7 @@ export const colleges = [
   },
   {
     name: "Vishwakarma Government Engineering College",
-    url: "",
+   // "",
     city: "Ahmedabad",
     state: "Gujarat",
     type: "Government",
@@ -1144,7 +1144,7 @@ export const colleges = [
   // Government Engineering Colleges in Multiple Cities
   {
     name: "Government Engineering College, Rajkot",
-    url: "",
+   // "",
     city: "Rajkot",
     state: "Gujarat",
     type: "Government",
@@ -1154,7 +1154,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Bhavnagar",
-    url: "",
+   // "",
     city: "Bhavnagar",
     state: "Gujarat",
     type: "Government",
@@ -1164,7 +1164,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Bharuch",
-    url: "",
+   // "",
     city: "Bharuch",
     state: "Gujarat",
     type: "Government",
@@ -1174,7 +1174,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Dahod",
-    url: "",
+   // "",
     city: "Dahod",
     state: "Gujarat",
     type: "Government",
@@ -1184,7 +1184,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Gandhinagar",
-    url: "",
+   // "",
     city: "Gandhinagar",
     state: "Gujarat",
     type: "Government",
@@ -1194,7 +1194,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Godhra",
-    url: "",
+   // "",
     city: "Godhra",
     state: "Gujarat",
     type: "Government",
@@ -1204,7 +1204,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Valsad",
-    url: "",
+   // "",
     city: "Valsad",
     state: "Gujarat",
     type: "Government",
@@ -1214,7 +1214,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Modasa",
-    url: "",
+   // "",
     city: "Modasa",
     state: "Gujarat",
     type: "Government",
@@ -1224,7 +1224,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Palanpur",
-    url: "",
+   // "",
     city: "Palanpur",
     state: "Gujarat",
     type: "Government",
@@ -1236,7 +1236,7 @@ export const colleges = [
   // Prominent Private Engineering Colleges
   {
     name: "Nirma University",
-    url: "",
+   // "",
     city: "Ahmedabad",
     state: "Gujarat",
     type: "Private",
@@ -1246,7 +1246,7 @@ export const colleges = [
   },
   {
     name: "Charotar Institute of Technology",
-    url: "",
+   // "",
     city: "Anand",
     state: "Gujarat",
     type: "Private",
@@ -1256,7 +1256,7 @@ export const colleges = [
   },
   {
     name: "A.D. Patel Institute of Technology (ADIT)",
-    url: "",
+   // "",
     city: "Anand",
     state: "Gujarat",
     type: "Private",
@@ -1266,7 +1266,7 @@ export const colleges = [
   },
   {
     name: "Silver Oak College of Engineering and Technology",
-    url: "",
+   // "",
     city: "Ahmedabad",
     state: "Gujarat",
     type: "Private",
@@ -1276,7 +1276,7 @@ export const colleges = [
   },
   {
     name: "Swaminarayan College of Engineering and Technology",
-    url: "",
+   // "",
     city: "Ahmedabad",
     state: "Gujarat",
     type: "Private",
@@ -1286,7 +1286,7 @@ export const colleges = [
   },
   {
     name: "Vadodara Institute of Engineering",
-    url: "",
+   // "",
     city: "Vadodara",
     state: "Gujarat",
     type: "Private",
@@ -1296,7 +1296,7 @@ export const colleges = [
   },
   {
     name: "Shantilal Shah Engineering College",
-    url: "",
+   // "",
     city: "Bhavnagar",
     state: "Gujarat",
     type: "Private",
@@ -1306,7 +1306,7 @@ export const colleges = [
   },
   {
     name: "SPB Patel Engineering College",
-    url: "",
+   // "",
     city: "Mehsana",
     state: "Gujarat",
     type: "Private",
@@ -1316,7 +1316,7 @@ export const colleges = [
   },
   {
     name: "Shroff S.R. Rotary Institute of Chemical Technology",
-    url: "",
+   // "",
     city: "Gandhinagar",
     state: "Gujarat",
     type: "Private",
@@ -1329,7 +1329,7 @@ export const colleges = [
   // Top Government Engineering Colleges
   {
     name: "National Institute of Technology (NIT), Kurukshetra",
-    url: "",
+   // "",
     city: "Kurukshetra",
     state: "Haryana",
     type: "Government",
@@ -1339,7 +1339,7 @@ export const colleges = [
   },
   {
     name: "J.C. Bose University of Science and Technology (YMCA), Faridabad",
-    url: "",
+   // "",
     city: "Faridabad",
     state: "Haryana",
     type: "Government",
@@ -1349,7 +1349,7 @@ export const colleges = [
   },
   {
     name: "Deenbandhu Chhotu Ram University of Science and Technology (DCRUST), Murthal",
-    url: "",
+   // "",
     city: "Murthal",
     state: "Haryana",
     type: "Government",
@@ -1359,7 +1359,7 @@ export const colleges = [
   },
   {
     name: "Kurukshetra University – Institute of Engineering & Technology, Kurukshetra",
-    url: "",
+   // "",
     city: "Kurukshetra",
     state: "Haryana",
     type: "Government",
@@ -1369,7 +1369,7 @@ export const colleges = [
   },
   {
     name: "Guru Jambheshwar University of Science and Technology (GJU), Hisar",
-    url: "",
+   // "",
     city: "Hisar",
     state: "Haryana",
     type: "Government",
@@ -1379,7 +1379,7 @@ export const colleges = [
   },
   {
     name: "State Institute of Engineering & Technology, Nilokheri",
-    url: "",
+   // "",
     city: "Nilokheri",
     state: "Haryana",
     type: "Government",
@@ -1389,7 +1389,7 @@ export const colleges = [
   },
   {
     name: "Rao Birendar Singh State Institute of Engineering & Technology, Rewari",
-    url: "",
+   // "",
     city: "Rewari",
     state: "Haryana",
     type: "Government",
@@ -1401,7 +1401,7 @@ export const colleges = [
   // Notable Private and Deemed Universities
   {
     name: "Amity University, Gurugram",
-    url: "",
+   // "",
     city: "Gurugram",
     state: "Haryana",
     type: "Private",
@@ -1411,7 +1411,7 @@ export const colleges = [
   },
   {
     name: "Manav Rachna International Institute of Research & Studies, Faridabad",
-    url: "",
+   // "",
     city: "Faridabad",
     state: "Haryana",
     type: "Private",
@@ -1421,7 +1421,7 @@ export const colleges = [
   },
   {
     name: "K.R. Mangalam University, Gurugram",
-    url: "",
+   // "",
     city: "Gurugram",
     state: "Haryana",
     type: "Private",
@@ -1431,7 +1431,7 @@ export const colleges = [
   },
   {
     name: "The NorthCap University, Gurugram",
-    url: "",
+   // "",
     city: "Gurugram",
     state: "Haryana",
     type: "Private",
@@ -1441,7 +1441,7 @@ export const colleges = [
   },
   {
     name: "Maharishi Markandeshwar University, Mullana, Ambala",
-    url: "",
+   // "",
     city: "Mullana",
     state: "Haryana",
     type: "Private",
@@ -1451,7 +1451,7 @@ export const colleges = [
   },
   {
     name: "Jind Institute of Engineering and Technology (JIET), Jind",
-    url: "",
+   // "",
     city: "Jind",
     state: "Haryana",
     type: "Private",
@@ -1461,7 +1461,7 @@ export const colleges = [
   },
   {
     name: "Apeejay Stya University, Gurugram",
-    url: "",
+   // "",
     city: "Gurugram",
     state: "Haryana",
     type: "Private",
@@ -1471,7 +1471,7 @@ export const colleges = [
   },
   {
     name: "Echelon Institute of Technology, Faridabad",
-    url: "",
+   // "",
     city: "Faridabad",
     state: "Haryana",
     type: "Private",
@@ -1483,7 +1483,7 @@ export const colleges = [
   // Other Prominent Colleges
   {
     name: "Shri Ram Institute Of Management And Technology, Palwal",
-    url: "",
+   // "",
     city: "Palwal",
     state: "Haryana",
     type: "Private",
@@ -1493,7 +1493,7 @@ export const colleges = [
   },
   {
     name: "BML Munjal University, Gurugram",
-    url: "",
+   // "",
     city: "Gurugram",
     state: "Haryana",
     type: "Private",
@@ -1503,7 +1503,7 @@ export const colleges = [
   },
   {
     name: "Om Sterling Global University, Hisar",
-    url: "",
+   // "",
     city: "Hisar",
     state: "Haryana",
     type: "Private",
@@ -1513,7 +1513,7 @@ export const colleges = [
   },
   {
     name: "Swami Devi Dayal Institute of Engineering and Technology, Panchkula",
-    url: "",
+   // "",
     city: "Panchkula",
     state: "Haryana",
     type: "Private",
@@ -1523,7 +1523,7 @@ export const colleges = [
   },
   {
     name: "BRCM College of Engineering and Technology, Bahal",
-    url: "",
+   // "",
     city: "Bahal",
     state: "Haryana",
     type: "Private",
@@ -1533,7 +1533,7 @@ export const colleges = [
   },
   {
     name: "Sonepat College of Engineering & Technology",
-    url: "",
+   // "",
     city: "Sonepat",
     state: "Haryana",
     type: "Private",
@@ -1545,7 +1545,7 @@ export const colleges = [
    // Top Government Engineering Colleges
   {
     name: "Indian Institute of Technology (IIT) Dhanbad (formerly ISM)",
-    url: "https://www.geniuseducon.com/college-details.php/indian-institute-of-technology-664c6ed9dc611",
+   // "./indian-institute-of-technology-664c6ed9dc611",
     city: "Dhanbad",
     state: "Jharkhand",
     type: "Government",
@@ -1555,7 +1555,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT) Jamshedpur",
-    url: "",
+   // "",
     city: "Jamshedpur",
     state: "Jharkhand",
     type: "Government",
@@ -1565,7 +1565,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Information Technology (IIIT) Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Government",
@@ -1575,7 +1575,7 @@ export const colleges = [
   },
   {
     name: "Birsa Institute of Technology (BIT) Sindri, Dhanbad",
-    url: "",
+   // "",
     city: "Dhanbad",
     state: "Jharkhand",
     type: "Government",
@@ -1585,7 +1585,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Advanced Manufacturing Technology (NIAMT), Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Government",
@@ -1595,7 +1595,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Ramgarh",
-    url: "",
+   // "",
     city: "Ramgarh",
     state: "Jharkhand",
     type: "Government",
@@ -1605,7 +1605,7 @@ export const colleges = [
   },
   {
     name: "Chaibasa Engineering College, Techno India Group",
-    url: "",
+   // "",
     city: "Chaibasa",
     state: "Jharkhand",
     type: "Government",
@@ -1615,7 +1615,7 @@ export const colleges = [
   },
   {
     name: "Dumka Engineering College, Dumka",
-    url: "",
+   // "",
     city: "Dumka",
     state: "Jharkhand",
     type: "Government",
@@ -1625,7 +1625,7 @@ export const colleges = [
   },
   {
     name: "University College of Engineering and Technology, Vinoba Bhave University, Hazaribag",
-    url: "",
+   // "",
     city: "Hazaribag",
     state: "Jharkhand",
     type: "Government",
@@ -1635,7 +1635,7 @@ export const colleges = [
   },
   {
     name: "Nilamber Pitamber University Engineering College",
-    url: "",
+   // "",
     city: "Daltonganj",
     state: "Jharkhand",
     type: "Government",
@@ -1647,7 +1647,7 @@ export const colleges = [
   // Top Private Engineering Colleges
   {
     name: "Birla Institute of Technology (BIT) Mesra, Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Private",
@@ -1657,7 +1657,7 @@ export const colleges = [
   },
   {
     name: "Arka Jain University, Jamshedpur",
-    url: "",
+   // "",
     city: "Jamshedpur",
     state: "Jharkhand",
     type: "Private",
@@ -1667,7 +1667,7 @@ export const colleges = [
   },
   {
     name: "Amity University, Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Private",
@@ -1677,7 +1677,7 @@ export const colleges = [
   },
   {
     name: "Cambridge Institute of Technology (CIT), Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Private",
@@ -1687,7 +1687,7 @@ export const colleges = [
   },
   {
     name: "R.V.S College of Engineering and Technology (RVSCET), Jamshedpur",
-    url: "",
+   // "",
     city: "Jamshedpur",
     state: "Jharkhand",
     type: "Private",
@@ -1697,7 +1697,7 @@ export const colleges = [
   },
   {
     name: "Alice Institute of Technology, Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Private",
@@ -1707,7 +1707,7 @@ export const colleges = [
   },
   {
     name: "Ramgarh Engineering College, Ramgarh",
-    url: "",
+   // "",
     city: "Ramgarh",
     state: "Jharkhand",
     type: "Private",
@@ -1717,7 +1717,7 @@ export const colleges = [
   },
   {
     name: "KK College of Engineering and Management, Dhanbad",
-    url: "",
+   // "",
     city: "Dhanbad",
     state: "Jharkhand",
     type: "Private",
@@ -1727,7 +1727,7 @@ export const colleges = [
   },
   {
     name: "Sai Nath University, Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Private",
@@ -1737,7 +1737,7 @@ export const colleges = [
   },
   {
     name: "Usha Martin University, Ranchi",
-    url: "",
+   // "",
     city: "Ranchi",
     state: "Jharkhand",
     type: "Private",
@@ -1750,7 +1750,7 @@ export const colleges = [
    // Top Government Engineering Colleges
   {
     name: "National Institute of Technology (NIT) Surathkal",
-    url: "https://www.nitk.ac.in/",
+   // "https://www.nitk.ac.in/",
     city: "Surathkal",
     state: "Karnataka",
     type: "Government",
@@ -1760,7 +1760,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Technology (IIT) Dharwad",
-    url: "https://iitdh.ac.in/",
+   // "https://iitdh.ac.in/",
     city: "Dharwad",
     state: "Karnataka",
     type: "Government",
@@ -1770,7 +1770,7 @@ export const colleges = [
   },
   {
     name: "University Visvesvaraya College of Engineering (UVCE), Bangalore",
-    url: "https://uvce.ac.in/",
+   // "https://uvce.ac.in/",
     city: "Bangalore",
     state: "Karnataka",
     type: "Government",
@@ -1780,7 +1780,7 @@ export const colleges = [
   },
   {
     name: "Visvesvaraya Technological University (VTU), Belagavi",
-    url: "https://vtu.ac.in/",
+   // "https://vtu.ac.in/",
     city: "Belagavi",
     state: "Karnataka",
     type: "Government",
@@ -1791,7 +1791,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Bangalore",
-    url: "",
+   // "",
     city: "Bangalore",
     state: "Karnataka",
     type: "Government",
@@ -1801,7 +1801,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Mysore",
-    url: "",
+   // "",
     city: "Mysore",
     state: "Karnataka",
     type: "Government",
@@ -1811,7 +1811,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Hassan",
-    url: "",
+   // "",
     city: "Hassan",
     state: "Karnataka",
     type: "Government",
@@ -1821,7 +1821,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College, Mangalore",
-    url: "",
+   // "",
     city: "Mangalore",
     state: "Karnataka",
     type: "Government",
@@ -1833,7 +1833,7 @@ export const colleges = [
   // Premier Private Engineering Colleges
   {
     name: "Manipal Institute of Technology (MIT), Manipal",
-    url: "https://manipal.edu/mit.html",
+   // "https://manipal.edu/mit.html",
     city: "Manipal",
     state: "Karnataka",
     type: "Private",
@@ -1843,7 +1843,7 @@ export const colleges = [
   },
   {
     name: "RV College of Engineering (RVCE), Bangalore",
-    url: "https://rvce.edu.in/",
+   // "https://rvce.edu.in/",
     city: "Bangalore",
     state: "Karnataka",
     type: "Private",
@@ -1853,7 +1853,7 @@ export const colleges = [
   },
   {
     name: "MS Ramaiah Institute of Technology, Bangalore",
-    url: "https://msrit.edu.in/",
+   // "https://msrit.edu.in/",
     city: "Bangalore",
     state: "Karnataka",
     type: "Private",
@@ -1863,7 +1863,7 @@ export const colleges = [
   },
   {
     name: "PES University, Bangalore",
-    url: "https://www.pes.edu/",
+   // "https://www.pes.edu/",
     city: "Bangalore",
     state: "Karnataka",
     type: "Private",
@@ -1873,7 +1873,7 @@ export const colleges = [
   },
   {
     name: "Jain University, Bangalore",
-    url: "https://www.jainuniversity.ac.in/",
+   // "https://www.jainuniversity.ac.in/",
     city: "Bangalore",
     state: "Karnataka",
     type: "Private",
@@ -1883,7 +1883,7 @@ export const colleges = [
   },
   {
     name: "Siddaganga Institute of Technology, Tumkur",
-    url: "https://www.sit.ac.in/",
+   // "https://www.sit.ac.in/",
     city: "Tumkur",
     state: "Karnataka",
     type: "Private",
@@ -1893,7 +1893,7 @@ export const colleges = [
   },
   {
     name: "NMAM Institute of Technology, Nitte",
-    url: "https://nmamit.nitte.edu.in/",
+   // "https://nmamit.nitte.edu.in/",
     city: "Nitte",
     state: "Karnataka",
     type: "Private",
@@ -1905,7 +1905,7 @@ export const colleges = [
   // Other Notable Colleges
   {
     name: "Alva’s Institute of Engineering & Technology (AIET), Mijar",
-    url: "",
+   // "",
     city: "Mijar",
     state: "Karnataka",
     type: "Private",
@@ -1915,7 +1915,7 @@ export const colleges = [
   },
   {
     name: "Nagarjuna College of Engineering & Technology, Bangalore",
-    url: "",
+   // "",
     city: "Bangalore",
     state: "Karnataka",
     type: "Private",
@@ -1925,7 +1925,7 @@ export const colleges = [
   },
   {
     name: "Christ University, Bangalore",
-    url: "https://christuniversity.in/",
+   // "https://christuniversity.in/",
     city: "Bangalore",
     state: "Karnataka",
     type: "Private",
@@ -1935,7 +1935,7 @@ export const colleges = [
   },
   {
     name: "BMS College of Engineering, Bangalore",
-    url: "https://bmsce.ac.in/",
+   // "https://bmsce.ac.in/",
     city: "Bangalore",
     state: "Karnataka",
     type: "Private",
@@ -1947,7 +1947,7 @@ export const colleges = [
  // Top Government Engineering Colleges
   {
     name: "Indian Institute of Technology (IIT) Indore",
-    url: "https://www.iiti.ac.in",
+   // "https://www.iiti.ac.in",
     city: "Indore",
     state: "Madhya Pradesh",
     type: "Government",
@@ -1957,7 +1957,7 @@ export const colleges = [
   },
   {
     name: "Maulana Azad National Institute of Technology (MANIT)",
-    url: "https://www.manit.ac.in",
+   // "https://www.manit.ac.in",
     city: "Bhopal",
     state: "Madhya Pradesh",
     type: "Government",
@@ -1967,7 +1967,7 @@ export const colleges = [
   },
   {
     name: "Atal Bihari Vajpayee Indian Institute of Information Technology and Management (ABVIIITM)",
-    url: "https://iiitm.ac.in",
+   // "https://iiitm.ac.in",
     city: "Gwalior",
     state: "Madhya Pradesh",
     type: "Government",
@@ -1977,7 +1977,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Information Technology Design and Manufacturing (IIITDM)",
-    url: "https://www.iiitdmj.ac.in",
+   // "https://www.iiitdmj.ac.in",
     city: "Jabalpur",
     state: "Madhya Pradesh",
     type: "Government",
@@ -1987,7 +1987,7 @@ export const colleges = [
   },
   {
     name: "Jabalpur Engineering College",
-    url: "http://jecin.jec.ac.in",
+   // "http://jecin.jec.ac.in",
     city: "Jabalpur",
     state: "Madhya Pradesh",
     type: "Government",
@@ -1997,7 +1997,7 @@ export const colleges = [
   },
   {
     name: "Rewa Engineering College",
-    url: "https://rewaenggcollege.ac.in",
+   // "https://rewaenggcollege.ac.in",
     city: "Rewa",
     state: "Madhya Pradesh",
     type: "Government",
@@ -2007,7 +2007,7 @@ export const colleges = [
   },
   {
     name: "Indira Gandhi Engineering College",
-    url: "",
+   // "",
     city: "Sagar",
     state: "Madhya Pradesh",
     type: "Government",
@@ -2017,7 +2017,7 @@ export const colleges = [
   },
   {
     name: "SGS Institute of Technology & Science",
-    url: "https://www.sgsits.ac.in",
+   // "https://www.sgsits.ac.in",
     city: "Indore",
     state: "Madhya Pradesh",
     type: "Government",
@@ -2029,7 +2029,7 @@ export const colleges = [
   // Leading Private Engineering Colleges
   {
     name: "Lakshmi Narain College of Technology (LNCT)",
-    url: "https://lnct.ac.in",
+   // "https://lnct.ac.in",
     city: "Bhopal",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2039,7 +2039,7 @@ export const colleges = [
   },
   {
     name: "Lakshmi Narain College of Technology (LNCT) Jabalpur",
-    url: "https://lnct.ac.in",
+   // "https://lnct.ac.in",
     city: "Jabalpur",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2049,7 +2049,7 @@ export const colleges = [
   },
   {
     name: "Amity University",
-    url: "https://www.amity.edu/central",
+   // "https://www.amity.edu/central",
     city: "Gwalior",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2059,7 +2059,7 @@ export const colleges = [
   },
   {
     name: "SAGE University",
-    url: "https://www.sageuniversity.in",
+   // "https://www.sageuniversity.in",
     city: "Bhopal",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2069,7 +2069,7 @@ export const colleges = [
   },
   {
     name: "SAGE University Indore",
-    url: "https://indore.sageuniversity.in",
+   // "https://indore.sageuniversity.in",
     city: "Indore",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2079,7 +2079,7 @@ export const colleges = [
   },
   {
     name: "Medi-Caps University",
-    url: "https://www.medicaps.ac.in",
+   // "https://www.medicaps.ac.in",
     city: "Indore",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2089,7 +2089,7 @@ export const colleges = [
   },
   {
     name: "Patel Group of Institutions",
-    url: "",
+   // "",
     city: "Bhopal",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2099,7 +2099,7 @@ export const colleges = [
   },
   {
     name: "Sagar Institute of Science & Technology (SISTec)",
-    url: "https://www.sistec.edu.in",
+   // "https://www.sistec.edu.in",
     city: "Bhopal",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2109,7 +2109,7 @@ export const colleges = [
   },
   {
     name: "Truba Group of Institutes",
-    url: "https://www.trubainstitute.ac.in",
+   // "https://www.trubainstitute.ac.in",
     city: "Bhopal",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2119,7 +2119,7 @@ export const colleges = [
   },
   {
     name: "Jaypee University of Engineering & Technology",
-    url: "https://www.juet.ac.in",
+   // "https://www.juet.ac.in",
     city: "Guna",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2129,7 +2129,7 @@ export const colleges = [
   },
   {
     name: "Madhyanchal Professional University",
-    url: "https://www.mpu.ac.in",
+   // "https://www.mpu.ac.in",
     city: "Bhopal",
     state: "Madhya Pradesh",
     type: "Private",
@@ -2142,7 +2142,7 @@ export const colleges = [
   // Top Government and Central Government Engineering Colleges
   {
     name: "Indian Institute of Technology (IIT) Bombay",
-    url: "https://www.iitb.ac.in/",
+   // "https://www.iitb.ac.in/",
     city: "Mumbai",
     state: "Maharashtra",
     type: "Government",
@@ -2152,7 +2152,7 @@ export const colleges = [
   },
   {
     name: "Visvesvaraya National Institute of Technology (VNIT)",
-    url: "https://vnit.ac.in/",
+   // "https://vnit.ac.in/",
     city: "Nagpur",
     state: "Maharashtra",
     type: "Government",
@@ -2162,7 +2162,7 @@ export const colleges = [
   },
   {
     name: "Institute of Chemical Technology (ICT)",
-    url: "https://www.ictmumbai.edu.in/",
+   // "https://www.ictmumbai.edu.in/",
     city: "Mumbai",
     state: "Maharashtra",
     type: "Government",
@@ -2172,7 +2172,7 @@ export const colleges = [
   },
   {
     name: "Defence Institute of Advanced Technology (DIAT)",
-    url: "https://diat.ac.in/",
+   // "https://diat.ac.in/",
     city: "Pune",
     state: "Maharashtra",
     type: "Government",
@@ -2182,7 +2182,7 @@ export const colleges = [
   },
   {
     name: "College of Engineering Pune (COEP)",
-    url: "https://coep.org.in/",
+   // "https://coep.org.in/",
     city: "Pune",
     state: "Maharashtra",
     type: "Government",
@@ -2192,7 +2192,7 @@ export const colleges = [
   },
   {
     name: "Veermata Jijabai Technological Institute (VJTI)",
-    url: "https://vjti.ac.in/",
+   // "https://vjti.ac.in/",
     city: "Mumbai",
     state: "Maharashtra",
     type: "Government",
@@ -2202,7 +2202,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Aurangabad",
-    url: "https://gcoea.ac.in/",
+   // "https://gcoea.ac.in/",
     city: "Aurangabad",
     state: "Maharashtra",
     type: "Government",
@@ -2212,7 +2212,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Amravati",
-    url: "https://coeamravati.ac.in/",
+   // "https://coeamravati.ac.in/",
     city: "Amravati",
     state: "Maharashtra",
     type: "Government",
@@ -2222,7 +2222,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Karad",
-    url: "https://gcoekar.ac.in/",
+   // "https://gcoekar.ac.in/",
     city: "Karad",
     state: "Maharashtra",
     type: "Government",
@@ -2232,7 +2232,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Chandrapur",
-    url: "https://gcoec.ac.in/",
+   // "https://gcoec.ac.in/",
     city: "Chandrapur",
     state: "Maharashtra",
     type: "Government",
@@ -2244,7 +2244,7 @@ export const colleges = [
   // Leading Private and Autonomous Engineering Colleges
   {
     name: "MIT World Peace University (MIT WPU)",
-    url: "https://mitwpu.edu.in/",
+   // "https://mitwpu.edu.in/",
     city: "Pune",
     state: "Maharashtra",
     type: "Private",
@@ -2254,7 +2254,7 @@ export const colleges = [
   },
   {
     name: "Dr. D.Y. Patil Institute of Technology",
-    url: "https://www.dypatil.edu/",
+   // "https://www.dypatil.edu/",
     city: "Pune",
     state: "Maharashtra",
     type: "Private",
@@ -2264,7 +2264,7 @@ export const colleges = [
   },
   {
     name: "Bharati Vidyapeeth’s College of Engineering",
-    url: "https://bvuniversity.edu.in/",
+   // "https://bvuniversity.edu.in/",
     city: "Pune",
     state: "Maharashtra",
     type: "Private",
@@ -2274,7 +2274,7 @@ export const colleges = [
   },
   {
     name: "Vishwakarma Institute of Technology",
-    url: "https://vit.edu/",
+   // "https://vit.edu/",
     city: "Pune",
     state: "Maharashtra",
     type: "Private",
@@ -2284,7 +2284,7 @@ export const colleges = [
   },
   {
     name: "Rajarambapu Institute of Technology",
-    url: "https://ritindia.edu/",
+   // "https://ritindia.edu/",
     city: "Sangli",
     state: "Maharashtra",
     type: "Private",
@@ -2294,7 +2294,7 @@ export const colleges = [
   },
   {
     name: "Fr. Conceicao Rodrigues College of Engineering (FCRCE)",
-    url: "https://www.frcrce.ac.in/",
+   // "https://www.frcrce.ac.in/",
     city: "Mumbai",
     state: "Maharashtra",
     type: "Private",
@@ -2304,7 +2304,7 @@ export const colleges = [
   },
   {
     name: "SPCE - Sardar Patel College of Engineering",
-    url: "https://spce.ac.in/",
+   // "https://spce.ac.in/",
     city: "Mumbai",
     state: "Maharashtra",
     type: "Private",
@@ -2314,7 +2314,7 @@ export const colleges = [
   },
   {
     name: "Ramrao Adik Institute of Technology",
-    url: "https://rait.ac.in/",
+   // "https://rait.ac.in/",
     city: "Navi Mumbai",
     state: "Maharashtra",
     type: "Private",
@@ -2324,7 +2324,7 @@ export const colleges = [
   },
   {
     name: "Thadomal Shahani Engineering College",
-    url: "https://www.tsec.edu/",
+   // "https://www.tsec.edu/",
     city: "Mumbai",
     state: "Maharashtra",
     type: "Private",
@@ -2336,7 +2336,7 @@ export const colleges = [
    // Top Government Engineering Colleges
   {
     name: "Indian Institute of Technology (IIT) Ropar",
-    url: "https://www.iitrpr.ac.in",
+   // "https://www.iitrpr.ac.in",
     city: "Rupnagar",
     state: "Punjab",
     type: "Government",
@@ -2346,7 +2346,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT) Jalandhar",
-    url: "https://www.nitj.ac.in",
+   // "https://www.nitj.ac.in",
     city: "Jalandhar",
     state: "Punjab",
     type: "Government",
@@ -2356,7 +2356,7 @@ export const colleges = [
   },
   {
     name: "Punjab Engineering College (PEC)",
-    url: "https://pec.ac.in",
+   // "https://pec.ac.in",
     city: "Chandigarh",
     state: "Chandigarh",
     type: "Government",
@@ -2366,7 +2366,7 @@ export const colleges = [
   },
   {
     name: "Guru Nanak Dev Engineering College (GNDEC)",
-    url: "https://www.gndec.ac.in",
+   // "https://www.gndec.ac.in",
     city: "Ludhiana",
     state: "Punjab",
     type: "Government",
@@ -2376,7 +2376,7 @@ export const colleges = [
   },
   {
     name: "Baba Banda Singh Bahadur Engineering College",
-    url: "",
+   // "",
     city: "Fatehgarh Sahib",
     state: "Punjab",
     type: "Government",
@@ -2386,7 +2386,7 @@ export const colleges = [
   },
   {
     name: "Government Engineering College",
-    url: "",
+   // "",
     city: "Bathinda",
     state: "Punjab",
     type: "Government",
@@ -2396,7 +2396,7 @@ export const colleges = [
   },
   {
     name: "Central Institute of Hand Tools (CIHT)",
-    url: "",
+   // "",
     city: "Jalandhar",
     state: "Punjab",
     type: "Government",
@@ -2408,7 +2408,7 @@ export const colleges = [
   // Leading Private Engineering Colleges
   {
     name: "Lovely Professional University (LPU)",
-    url: "https://www.lpu.in",
+   // "https://www.lpu.in",
     city: "Phagwara",
     state: "Punjab",
     type: "Private",
@@ -2418,7 +2418,7 @@ export const colleges = [
   },
   {
     name: "Thapar Institute of Engineering and Technology (TIET)",
-    url: "https://www.thapar.edu",
+   // "https://www.thapar.edu",
     city: "Patiala",
     state: "Punjab",
     type: "Private",
@@ -2428,7 +2428,7 @@ export const colleges = [
   },
   {
     name: "Chandigarh University",
-    url: "https://www.cuchd.in",
+   // "https://www.cuchd.in",
     city: "Chandigarh",
     state: "Chandigarh",
     type: "Private",
@@ -2438,7 +2438,7 @@ export const colleges = [
   },
   {
     name: "Chitkara University",
-    url: "https://www.chitkara.edu.in",
+   // "https://www.chitkara.edu.in",
     city: "Chandigarh",
     state: "Chandigarh",
     type: "Private",
@@ -2448,7 +2448,7 @@ export const colleges = [
   },
   {
     name: "Chandigarh Group of Colleges",
-    url: "https://www.cgc.edu.in",
+   // "https://www.cgc.edu.in",
     city: "Landran",
     state: "Punjab",
     type: "Private",
@@ -2458,7 +2458,7 @@ export const colleges = [
   },
   {
     name: "Rayat Bahra University",
-    url: "https://www.rayatbahrauniversity.edu.in",
+   // "https://www.rayatbahrauniversity.edu.in",
     city: "Mohali",
     state: "Punjab",
     type: "Private",
@@ -2468,7 +2468,7 @@ export const colleges = [
   },
   {
     name: "Rayat Bahra Institute of Engineering & Biotechnology",
-    url: "https://www.rayatbahrainstitute.edu.in",
+   // "https://www.rayatbahrainstitute.edu.in",
     city: "Mohali",
     state: "Punjab",
     type: "Private",
@@ -2478,7 +2478,7 @@ export const colleges = [
   },
   {
     name: "I.K. Gujral Punjab Technical University (PTU)",
-    url: "https://www.ptu.ac.in",
+   // "https://www.ptu.ac.in",
     city: "Jalandhar",
     state: "Punjab",
     type: "Government",
@@ -2490,7 +2490,7 @@ export const colleges = [
   // Top Government Engineering Colleges
   {
     name: "Government College of Technology",
-    url: "https://www.gct.ac.in",
+   // "https://www.gct.ac.in",
     city: "Coimbatore",
     state: "Tamil Nadu",
     type: "Government",
@@ -2500,7 +2500,7 @@ export const colleges = [
   },
   {
     name: "Alagappa Chettiar College of Engineering and Technology",
-    url: "https://www.alagappa.ac.in/engineering",
+   // "https://www.alagappa.ac.in/engineering",
     city: "Karaikudi",
     state: "Tamil Nadu",
     type: "Government",
@@ -2510,7 +2510,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Salem",
-    url: "https://www.gcesalem.edu.in",
+   // "https://www.gcesalem.edu.in",
     city: "Salem",
     state: "Tamil Nadu",
     type: "Government",
@@ -2520,7 +2520,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Tirunelveli",
-    url: "https://www.tce.ac.in",
+   // "https://www.tce.ac.in",
     city: "Tirunelveli",
     state: "Tamil Nadu",
     type: "Government",
@@ -2530,7 +2530,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Erode",
-    url: "https://www.gce-ec.edu.in",
+   // "https://www.gce-ec.edu.in",
     city: "Erode",
     state: "Tamil Nadu",
     type: "Government",
@@ -2540,7 +2540,7 @@ export const colleges = [
   },
   {
     name: "Thanthai Periyar Government Institute of Technology",
-    url: "https://www.tpget.ac.in",
+   // "https://www.tpget.ac.in",
     city: "Vellore",
     state: "Tamil Nadu",
     type: "Government",
@@ -2550,7 +2550,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Bargur",
-    url: "",
+   // "",
     city: "Bargur",
     state: "Tamil Nadu",
     type: "Government",
@@ -2560,7 +2560,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Thanjavur",
-    url: "",
+   // "",
     city: "Thanjavur",
     state: "Tamil Nadu",
     type: "Government",
@@ -2570,7 +2570,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Bodinayakkanur",
-    url: "",
+   // "",
     city: "Bodinayakkanur",
     state: "Tamil Nadu",
     type: "Government",
@@ -2580,7 +2580,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Dharmapuri",
-    url: "",
+   // "",
     city: "Dharmapuri",
     state: "Tamil Nadu",
     type: "Government",
@@ -2590,7 +2590,7 @@ export const colleges = [
   },
   {
     name: "Government College of Engineering, Srirangam",
-    url: "",
+   // "",
     city: "Srirangam",
     state: "Tamil Nadu",
     type: "Government",
@@ -2602,7 +2602,7 @@ export const colleges = [
   // Renowned Private Engineering Colleges
   {
     name: "Indian Institute of Technology Madras (IIT Madras)",
-    url: "https://www.iitm.ac.in",
+   // "https://www.iitm.ac.in",
     city: "Chennai",
     state: "Tamil Nadu",
     type: "Government",
@@ -2612,7 +2612,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology Tiruchirappalli (NIT Trichy)",
-    url: "https://www.nitt.edu",
+   // "https://www.nitt.edu",
     city: "Tiruchirappalli",
     state: "Tamil Nadu",
     type: "Government",
@@ -2622,7 +2622,7 @@ export const colleges = [
   },
   {
     name: "Vellore Institute of Technology (VIT)",
-    url: "https://vit.ac.in",
+   // "https://vit.ac.in",
     city: "Vellore",
     state: "Tamil Nadu",
     type: "Private",
@@ -2632,7 +2632,7 @@ export const colleges = [
   },
   {
     name: "SRM Institute of Science and Technology",
-    url: "https://www.srmist.edu.in",
+   // "https://www.srmist.edu.in",
     city: "Kattankulathur",
     state: "Tamil Nadu",
     type: "Private",
@@ -2642,7 +2642,7 @@ export const colleges = [
   },
   {
     name: "SSN College of Engineering",
-    url: "https://www.ssn.edu.in",
+   // "https://www.ssn.edu.in",
     city: "Chennai",
     state: "Tamil Nadu",
     type: "Private",
@@ -2652,7 +2652,7 @@ export const colleges = [
   },
   {
     name: "PSG College of Technology",
-    url: "https://www.psgtech.edu",
+   // "https://www.psgtech.edu",
     city: "Coimbatore",
     state: "Tamil Nadu",
     type: "Private",
@@ -2662,7 +2662,7 @@ export const colleges = [
   },
   {
     name: "Sathyabama Institute of Science and Technology",
-    url: "https://sathyabama.ac.in",
+   // "https://sathyabama.ac.in",
     city: "Chennai",
     state: "Tamil Nadu",
     type: "Private",
@@ -2672,7 +2672,7 @@ export const colleges = [
   },
   {
     name: "Thiagarajar College of Engineering",
-    url: "https://www.tce.edu",
+   // "https://www.tce.edu",
     city: "Madurai",
     state: "Tamil Nadu",
     type: "Private",
@@ -2682,7 +2682,7 @@ export const colleges = [
   },
   {
     name: "Hindustan Institute of Technology and Science",
-    url: "https://hindustanuniv.ac.in",
+   // "https://hindustanuniv.ac.in",
     city: "Chennai",
     state: "Tamil Nadu",
     type: "Private",
@@ -2692,7 +2692,7 @@ export const colleges = [
   },
   {
     name: "Kumaraguru College of Technology",
-    url: "https://www.kct.ac.in",
+   // "https://www.kct.ac.in",
     city: "Coimbatore",
     state: "Tamil Nadu",
     type: "Private",
@@ -2702,7 +2702,7 @@ export const colleges = [
   },
   {
     name: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute",
-    url: "https://veltech.edu.in",
+   // "https://veltech.edu.in",
     city: "Chennai",
     state: "Tamil Nadu",
     type: "Private",
@@ -2715,7 +2715,7 @@ export const colleges = [
  // Top Government / Central Institutes
   {
     name: "Indian Institute of Technology (IIT) Kanpur",
-    url: "https://iitk.ac.in",
+   // "https://iitk.ac.in",
     city: "Kanpur",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2725,7 +2725,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Technology (BHU) Varanasi",
-    url: "http://iitbhu.ac.in",
+   // "http://iitbhu.ac.in",
     city: "Varanasi",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2735,7 +2735,7 @@ export const colleges = [
   },
   {
     name: "Motilal Nehru National Institute of Technology (MNNIT) Allahabad",
-    url: "https://mnnit.ac.in",
+   // "https://mnnit.ac.in",
     city: "Allahabad",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2745,7 +2745,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Information Technology (IIIT) Allahabad",
-    url: "https://iiita.ac.in",
+   // "https://iiita.ac.in",
     city: "Allahabad",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2755,7 +2755,7 @@ export const colleges = [
   },
   {
     name: "Rajiv Gandhi Institute of Petroleum Technology (RGIPT), Amethi",
-    url: "https://rgipt.ac.in",
+   // "https://rgipt.ac.in",
     city: "Amethi",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2765,7 +2765,7 @@ export const colleges = [
   },
   {
     name: "Harcourt Butler Technical University (HBTU), Kanpur",
-    url: "https://hbtu.ac.in",
+   // "https://hbtu.ac.in",
     city: "Kanpur",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2775,7 +2775,7 @@ export const colleges = [
   },
   {
     name: "Aligarh Muslim University (AMU)",
-    url: "https://www.amu.ac.in",
+   // "https://www.amu.ac.in",
     city: "Aligarh",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2787,7 +2787,7 @@ export const colleges = [
   // Other Government Colleges
   {
     name: "Madan Mohan Malaviya Engineering College",
-    url: "",
+   // "",
     city: "Gorakhpur",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2797,7 +2797,7 @@ export const colleges = [
   },
   {
     name: "Government College, Faizabad",
-    url: "",
+   // "",
     city: "Faizabad",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2807,7 +2807,7 @@ export const colleges = [
   },
   {
     name: "Uttar Pradesh Textile Technology Institute",
-    url: "",
+   // "",
     city: "Kanpur",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2817,7 +2817,7 @@ export const colleges = [
   },
   {
     name: "Institute of Engineering & Rural Technology",
-    url: "",
+   // "",
     city: "Allahabad",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2827,7 +2827,7 @@ export const colleges = [
   },
   {
     name: "B.B.S. College of Engineering & Technology",
-    url: "",
+   // "",
     city: "Fatehpur",
     state: "Uttar Pradesh",
     type: "Government",
@@ -2839,7 +2839,7 @@ export const colleges = [
   // Private / Deemed Universities
   {
     name: "Amity University",
-    url: "https://www.amity.edu",
+   // "https://www.amity.edu",
     city: "Noida",
     state: "Uttar Pradesh",
     type: "Private",
@@ -2849,7 +2849,7 @@ export const colleges = [
   },
   {
     name: "Galgotias University",
-    url: "https://www.galgotiasuniversity.edu.in",
+   // "https://www.galgotiasuniversity.edu.in",
     city: "Greater Noida",
     state: "Uttar Pradesh",
     type: "Private",
@@ -2859,7 +2859,7 @@ export const colleges = [
   },
   {
     name: "Jaypee Institute of Information Technology (JIIT)",
-    url: "https://jiit.ac.in",
+   // "https://jiit.ac.in",
     city: "Noida",
     state: "Uttar Pradesh",
     type: "Private",
@@ -2869,7 +2869,7 @@ export const colleges = [
   },
   {
     name: "Shobhit University",
-    url: "https://www.shobhituniversity.ac.in",
+   // "https://www.shobhituniversity.ac.in",
     city: "Meerut",
     state: "Uttar Pradesh",
     type: "Private",
@@ -2879,7 +2879,7 @@ export const colleges = [
   },
   {
     name: "Shiv Nadar University",
-    url: "https://shivnadaru.com",
+   // "https://shivnadaru.com",
     city: "Gautam Buddha Nagar",
     state: "Uttar Pradesh",
     type: "Private",
@@ -2889,7 +2889,7 @@ export const colleges = [
   },
   {
     name: "Noida Institute of Engineering and Technology (NIET)",
-    url: "https://niet.co.in",
+   // "https://niet.co.in",
     city: "Greater Noida",
     state: "Uttar Pradesh",
     type: "Private",
@@ -2899,7 +2899,7 @@ export const colleges = [
   },
   {
     name: "Galgotias College of Engineering & Technology",
-    url: "https://www.galgotiasuniversity.edu.in/schools/engineering-computer-applied-sciences",
+   // "https://www.galgotiasuniversity.edu.in/schools/engineering-computer-applied-sciences",
     city: "Greater Noida",
     state: "Uttar Pradesh",
     type: "Private",
@@ -2910,7 +2910,7 @@ export const colleges = [
   // Top Government Engineering Colleges - Arunachal Pradesh
   {
     name: "National Institute of Technology (NIT) Arunachal Pradesh",
-    url: "https://nitap.ac.in",
+   // "https://nitap.ac.in",
     city: "Jote (Papum Pare)",
     state: "Arunachal Pradesh",
     type: "Government",
@@ -2920,7 +2920,7 @@ export const colleges = [
   },
   {
     name: "North Eastern Regional Institute of Science and Technology (NERIST)",
-    url: "https://nerist.ac.in",
+   // "https://nerist.ac.in",
     city: "Nirjuli (Itanagar)",
     state: "Arunachal Pradesh",
     type: "Government",
@@ -2930,7 +2930,7 @@ export const colleges = [
   },
   {
     name: "Arunachal University of Studies",
-    url: "https://www.aus.edu.in",
+   // "https://www.aus.edu.in",
     city: "Namsai",
     state: "Arunachal Pradesh",
     type: "Private",
@@ -2942,7 +2942,7 @@ export const colleges = [
   // Top Private Engineering Colleges - Arunachal Pradesh
   {
     name: "Arunodaya University",
-    url: "http://arunodayauniversity.ac.in",
+   // "http://arunodayauniversity.ac.in",
     city: "Lekhi, Naharlagun (Itanagar)",
     state: "Arunachal Pradesh",
     type: "Private",
@@ -2952,7 +2952,7 @@ export const colleges = [
   },
   {
     name: "Himalayan University",
-    url: "https://himalayanuniversity.edu.in",
+   // "https://himalayanuniversity.edu.in",
     city: "Jullang Village (Itanagar)",
     state: "Arunachal Pradesh",
     type: "Private",
@@ -2962,7 +2962,7 @@ export const colleges = [
   },
   {
     name: "Apex Professional University (APU)",
-    url: "https://apexprofessionaluniversity.ac.in",
+   // "https://apexprofessionaluniversity.ac.in",
     city: "Pasighat (Smart City)",
     state: "Arunachal Pradesh",
     type: "Private",
@@ -2972,7 +2972,7 @@ export const colleges = [
   },
   {
     name: "NEFTU (North East Frontier Technical University)",
-    url: "https://neftu.ac.in",
+   // "https://neftu.ac.in",
     city: "Aalo (West Siang)",
     state: "Arunachal Pradesh",
     type: "Private",
@@ -2982,7 +2982,7 @@ export const colleges = [
   },
   {
     name: "Indira Gandhi Technological and Medical Sciences University (IGTAMSU)",
-    url: "https://igtamsu.edu.in",
+   // "https://igtamsu.edu.in",
     city: "Ziro (Lower Subansiri District)",
     state: "Arunachal Pradesh",
     type: "Private",
@@ -2993,7 +2993,7 @@ export const colleges = [
    // Top Government Engineering Colleges
   {
     name: "Indian Institute of Technology (IIT) Guwahati",
-    url: "https://iitg.ac.in",
+   // "https://iitg.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Government",
@@ -3003,7 +3003,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT) Silchar",
-    url: "https://www.nits.ac.in",
+   // "https://www.nits.ac.in",
     city: "Silchar",
     state: "Assam",
     type: "Government",
@@ -3013,7 +3013,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute of Information Technology (IIIT) Guwahati",
-    url: "https://www.iiitg.ac.in",
+   // "https://www.iiitg.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Government",
@@ -3023,7 +3023,7 @@ export const colleges = [
   },
   {
     name: "Assam Engineering College",
-    url: "https://aecassam.ac.in",
+   // "https://aecassam.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Government",
@@ -3033,7 +3033,7 @@ export const colleges = [
   },
   {
     name: "Jorhat Engineering College",
-    url: "http://jecassam.in",
+   // "http://jecassam.in",
     city: "Jorhat",
     state: "Assam",
     type: "Government",
@@ -3043,7 +3043,7 @@ export const colleges = [
   },
   {
     name: "Bineswar Brahma Engineering College",
-    url: "",
+   // "",
     city: "Kokrajhar",
     state: "Assam",
     type: "Government",
@@ -3053,7 +3053,7 @@ export const colleges = [
   },
   {
     name: "Barak Valley Engineering College",
-    url: "",
+   // "",
     city: "Silchar",
     state: "Assam",
     type: "Government",
@@ -3063,7 +3063,7 @@ export const colleges = [
   },
   {
     name: "Tezpur University (School of Engineering)",
-    url: "https://www.tezu.ernet.in",
+   // "https://www.tezu.ernet.in",
     city: "Tezpur",
     state: "Assam",
     type: "Government",
@@ -3073,7 +3073,7 @@ export const colleges = [
   },
   {
     name: "Central Institute of Technology (CIT), Kokrajhar",
-    url: "https://cit.ac.in",
+   // "https://cit.ac.in",
     city: "Kokrajhar",
     state: "Assam",
     type: "Government",
@@ -3083,7 +3083,7 @@ export const colleges = [
   },
   {
     name: "Assam Science and Technology University",
-    url: "https://astu.ac.in",
+   // "https://astu.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Government",
@@ -3095,7 +3095,7 @@ export const colleges = [
   // Notable Private and Public-Private Engineering Colleges
   {
     name: "Assam Don Bosco University",
-    url: "https://www.dbuniversity.ac.in",
+   // "https://www.dbuniversity.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Private",
@@ -3105,7 +3105,7 @@ export const colleges = [
   },
   {
     name: "Assam Down Town University (ADTU)",
-    url: "https://www.adtu.in",
+   // "https://www.adtu.in",
     city: "Guwahati",
     state: "Assam",
     type: "Private",
@@ -3115,7 +3115,7 @@ export const colleges = [
   },
   {
     name: "Royal Global University",
-    url: "https://royalglobaluniversity.in",
+   // "https://royalglobaluniversity.in",
     city: "Guwahati",
     state: "Assam",
     type: "Private",
@@ -3125,7 +3125,7 @@ export const colleges = [
   },
   {
     name: "Jorhat Institute of Science & Technology",
-    url: "https://jistassam.in",
+   // "https://jistassam.in",
     city: "Jorhat",
     state: "Assam",
     type: "Private",
@@ -3135,7 +3135,7 @@ export const colleges = [
   },
   {
     name: "Girijananda Chowdhury Institute of Management & Technology",
-    url: "https://gcimt.ac.in",
+   // "https://gcimt.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Private",
@@ -3145,7 +3145,7 @@ export const colleges = [
   },
   {
     name: "Don Bosco College of Engineering and Technology",
-    url: "https://dbcet.ac.in",
+   // "https://dbcet.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Private",
@@ -3155,7 +3155,7 @@ export const colleges = [
   },
   {
     name: "Scholar's Institute of Technology and Management",
-    url: "https://scholarscollege.ac.in",
+   // "https://scholarscollege.ac.in",
     city: "Guwahati",
     state: "Assam",
     type: "Private",
@@ -3166,7 +3166,7 @@ export const colleges = [
   // goa 
     {
     name: "Goa College of Engineering",
-    url: "https://www.gec.ac.in/",
+   // "https://www.gec.ac.in/",
     city: "Ponda",
     state: "Goa",
     type: "Government",
@@ -3176,7 +3176,7 @@ export const colleges = [
   },
   {
     name: "Indian Institute Of Technology Goa",
-    url: "http://www.iitgoa.ac.in/",
+   // "http://www.iitgoa.ac.in/",
     city: "Ponda",
     state: "Goa",
     type: "Government",
@@ -3186,7 +3186,7 @@ export const colleges = [
   },
   {
     name: "Shree Rayeshwar Institute of Engineering & Information Technology",
-    url: "http://ritgoa.ac.in/",
+   // "http://ritgoa.ac.in/",
     city: "Shiroda",
     state: "Goa",
     type: "Private",
@@ -3196,7 +3196,7 @@ export const colleges = [
   },
   {
     name: "Padre Conceicao College of Engineering",
-    url: "https://pccegoa.edu.in/",
+   // "https://pccegoa.edu.in/",
     city: "Verna",
     state: "Goa",
     type: "Private",
@@ -3206,7 +3206,7 @@ export const colleges = [
   },
   {
     name: "Agnel Institute of Technology and Design",
-    url: "https://aitdgoa.edu.in/",
+   // "https://aitdgoa.edu.in/",
     city: "Assagao",
     state: "Goa",
     type: "Private",
@@ -3216,7 +3216,7 @@ export const colleges = [
   },
   {
     name: "Institute Of Maritime Studies",
-    url: "http://imsgoa.org/",
+   // "http://imsgoa.org/",
     city: "Vasco Da Gama",
     state: "Goa",
     type: "Private",
@@ -3226,7 +3226,7 @@ export const colleges = [
   },
   {
     name: "National Institute of Technology (NIT) Goa",
-    url: "https://nitgoa.ac.in/",
+   // "https://nitgoa.ac.in/",
     city: "Ponda",
     state: "Goa",
     type: "Government",
@@ -3236,7 +3236,7 @@ export const colleges = [
   },
   {
     name: "Birla Institute of Technology & Science (BITS), Pilani – Goa Campus",
-    url: "https://www.bits-pilani.ac.in/goa/",
+   // "https://www.bits-pilani.ac.in/goa/",
     city: "South Goa",
     state: "Goa",
     type: "Private/Deemed",
@@ -3246,7 +3246,7 @@ export const colleges = [
   },
   {
     name: "Parul University",
-    url: "https://paruluniversity.ac.in/",
+   // "https://paruluniversity.ac.in/",
     city: "Quepem",
     state: "Goa",
     type: "Private",
@@ -3256,7 +3256,7 @@ export const colleges = [
   },
   {
     name: "Don Bosco College of Engineering",
-    url: "https://dbcem.edu.in/",
+   // "https://dbcem.edu.in/",
     city: "Fatorda, Margao",
     state: "Goa",
     type: "Private",
@@ -3266,7 +3266,7 @@ export const colleges = [
   },
   {
     name: "Goa University",
-    url: "https://www.unigoa.ac.in/",
+   // "https://www.unigoa.ac.in/",
     city: "Taleigao Plateau",
     state: "Goa",
     type: "Government",
