@@ -3,7 +3,7 @@
 import { useState, useTransition } from 'react';
 import Image from 'next/image';
 import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion';
+import { motion ,AnimatePresence } from 'framer-motion';
 import {
   FaChalkboardTeacher, FaUniversity, FaLaptopCode, FaGavel, FaUserMd, FaGraduationCap,
   FaBriefcase, FaWhatsapp ,FaFlask,FaDownload, FaPlayCircle,FaHandsHelping, FaMoneyCheckAlt, FaCertificate, FaGlobeAsia, FaUserGraduate
@@ -14,7 +14,7 @@ import { Navigation, Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-
+import { Player } from "@lottiefiles/react-lottie-player";
 // REMOVED: import { enquiryAction } from '@/app/(users)/admission.enquiry';
 const handleDownload = () => {
    
@@ -61,15 +61,33 @@ const topColleges = [
   { name: 'IIT Guwahati', category: 'Engineering', image: '/IIT Guwahati logo.png' },
 ];
 
+// const counsellingData = [
+//   { name: 'JOSAA', image: '/JOSAA.png' }, { name: 'CSAB', image: '/CSEB.png' }, { name: 'UPTU', image: '/UPTU.png' },
+//   { name: 'GGSIPU', image: '/JJ IPU-DELHI.png' }, { name: 'JAC Delhi', image: '/JAC Delhi.png' }, { name: 'MP-DTE', image: '/MP-DTE.png' },
+//   { name: 'Rajasthan REAP', image: '/Reap.png' }, { name: 'COMED-K', image: '/comedk.png' }, { name: 'MHT-CET', image: '/MHT-CET.png' },
+//   { name: 'WBJEE', image: '/WBJEE.png' }, { name: 'BCECE', image: '/bcece.png' }, { name: 'Odisha JEE', image: '/OJEE.png' },
+//   { name: 'MMMUT Gorakhpur', image: '/mmmut.png' }, { name: 'JAC Chandigarh', image: '/jac-chandigarh.png' }, { name: 'HBTU Kanpur', image: '/hbtu.png' },
+//   { name: 'HSTES Haryana', image: '/hstes.png' }, { name: 'JIIT Noida', image: '/JIIT-NOIDA.png' },
+// ];
 const counsellingData = [
-  { name: 'JOSAA', image: '/JOSAA.png' }, { name: 'CSAB', image: '/CSEB.png' }, { name: 'UPTU', image: '/UPTU.png' },
-  { name: 'GGSIPU', image: '/JJ IPU-DELHI.png' }, { name: 'JAC Delhi', image: '/JAC Delhi.png' }, { name: 'MP-DTE', image: '/MP-DTE.png' },
-  { name: 'Rajasthan REAP', image: '/Reap.png' }, { name: 'COMED-K', image: '/comedk.png' }, { name: 'MHT-CET', image: '/MHT-CET.png' },
-  { name: 'WBJEE', image: '/WBJEE.png' }, { name: 'BCECE', image: '/bcece.png' }, { name: 'Odisha JEE', image: '/OJEE.png' },
-  { name: 'MMMUT Gorakhpur', image: '/mmmut.png' }, { name: 'JAC Chandigarh', image: '/jac-chandigarh.png' }, { name: 'HBTU Kanpur', image: '/hbtu.png' },
-  { name: 'HSTES Haryana', image: '/hstes.png' }, { name: 'JIIT Noida', image: '/JIIT-NOIDA.png' },
+  { name: "JOSAA", desc: "Joint Seat Allocation Authority" },
+  { name: "CSAB", desc: "Central Seat Allocation Board" },
+  { name: "UPTU", desc: "Uttar Pradesh Technical University" },
+  { name: "GGSIPU", desc: "Guru Gobind Singh Indraprastha University" },
+  { name: "JAC Delhi", desc: "Joint Admission Counselling Delhi" },
+  { name: "MP-DTE", desc: "Madhya Pradesh Directorate of Technical Education" },
+  { name: "Rajasthan REAP", desc: "Rajasthan Engineering Admission Process" },
+  { name: "COMED-K", desc: "Consortium of Medical, Engineering and Dental Colleges of Karnataka" },
+  { name: "MHT-CET", desc: "Maharashtra Common Entrance Test" },
+  { name: "WBJEE", desc: "West Bengal Joint Entrance Examination" },
+  { name: "BCECE", desc: "Bihar Combined Entrance Competitive Examination" },
+  { name: "Odisha JEE", desc: "Odisha Joint Entrance Examination" },
+  { name: "MMMUT Gorakhpur", desc: "Madan Mohan Malaviya University of Technology" },
+  { name: "JAC Chandigarh", desc: "Joint Admission Counselling Chandigarh" },
+  { name: "HBTU Kanpur", desc: "Harcourt Butler Technical University" },
+  { name: "HSTES Haryana", desc: "Haryana State Technical Education Society" },
+  { name: "JIIT Noida", desc: "Jaypee Institute of Information Technology" },
 ];
-
 const students = [
   { name: 'Divyanshu', college: 'NIT Patna', image: '/divyanshu.png', story: "I am grateful to Every Detail Education for their invaluable support in securing my seat in the BTech program at NIT Patna. Their knowledgeable counselors provided personalized guidance on the admission process and entrance exams, making a significant difference in my preparation. I highly recommend their services to anyone seeking academic counseling. Thank you for your amazing support!" },
   { name: 'Shivang Kumar', college: 'IIT Ropar', image: '/Shivang.png', story: "Heyy,this is an amazing Consulatnacy in patna which gets you in a better college on the basis of your rank..You can do counselling from here.👍I have done my counselling from here and I have been in an amazing college."},
@@ -133,6 +151,7 @@ const slides = [
  
 
 export default function EnquiryForm() {
+    const [hoverIndex, setHoverIndex] = useState(null);
 
  const [isOpen, setIsOpen] = useState(false);
 
@@ -332,7 +351,7 @@ export default function EnquiryForm() {
         </div>
       </section>
 
-      {/* Counselling Section */}
+      {/* Counselling Section
       <section className="relative py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-green-200 overflow-hidden px-6">
         <div className="absolute top-20 left-10 w-72 h-72 bg-green-300 rounded-full blur-3xl opacity-10 pointer-events-none"></div>
         <div className="absolute bottom-20 right-10 w-72 h-72 bg-emerald-400 rounded-full blur-3xl opacity-10 pointer-events-none"></div>
@@ -359,7 +378,173 @@ export default function EnquiryForm() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+ <section
+  className="relative py-24 px-6 bg-gradient-to-br from-sky-50 via-emerald-50 to-lime-50 overflow-hidden min-h-screen"
+  aria-label="Counselling Support Section"
+>
+  {/* Decorative SVGs */}
+  <svg className="absolute top-[-60px] left-[-80px] w-[410px] opacity-25" viewBox="0 0 500 500" fill="none">
+    <circle cx="250" cy="250" r="200" fill="#6ee7b7" />
+  </svg>
+  <svg className="absolute bottom-[-80px] right-[-100px] w-[410px] opacity-25" viewBox="0 0 500 500" fill="none">
+    <circle cx="250" cy="250" r="200" fill="#a3e635" />
+  </svg>
+  {/* Animated background shapes */}
+  <div className="absolute top-16 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl opacity-30 pointer-events-none animate-pulse" />
+  <div className="absolute bottom-16 right-10 w-72 h-72 bg-lime-400 rounded-full blur-3xl opacity-30 pointer-events-none animate-pulse" />
+  <div className="absolute left-1/2 top-1/4 -translate-x-1/2 w-44 h-44 bg-sky-200 rounded-full blur-2xl opacity-20 pointer-events-none" />
+
+  {/* Heading */}
+  <motion.h2
+    className="text-5xl font-extrabold text-center text-gray-800 mb-7 tracking-wider drop-shadow-sm"
+    initial={{ opacity: 0, y: -30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+  >
+    OUR <span className="text-green-600 ">COUNSELLING</span> SUPPORT
+  </motion.h2>
+
+  {/* Subtitle */}
+  <motion.p
+    className="text-center text-sky-700 max-w-2xl mx-auto mb-16 text-lg md:text-xl font-semibold"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.25, duration: 0.8 }}
+  >
+    Expert guidance for entrance exams and counselling processes across India. <span className="inline-block text-lg font-extrabold text-lime-600 animate-pulse">#SuccessWithUs</span>
+  </motion.p>
+
+  {/* Counselling grid */}
+  <div className="relative max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-20 gap-x-10">
+    {counsellingData.map((item, idx) => (
+      <motion.div
+        key={idx}
+        className="relative group flex flex-col items-center outline-none focus:ring-4 focus:ring-emerald-400 cursor-pointer"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: idx * 0.07 }}
+        whileHover={{ scale: 1.14, zIndex: 50 }}
+        tabIndex={0}
+        onMouseEnter={() => setHoverIndex(idx)}
+        onMouseLeave={() => setHoverIndex(null)}
+        onFocus={() => setHoverIndex(idx)}
+        onBlur={() => setHoverIndex(null)}
+        aria-describedby={`desc-${idx}`}
+      >
+        {/* Glowing multi-layered animated circle */}
+        <div
+          className={`
+            relative flex items-center justify-center w-28 h-28 rounded-full cursor-pointer
+            bg-gradient-to-tr from-lime-400 via-emerald-400 to-sky-500
+            shadow-[0_0_24px_rgba(56,189,124,0.9),inset_0_0_20px_rgba(56,189,124,0.7)]
+            ring-2 ring-lime-300
+            transition-colors duration-700 ease-in-out
+            group-hover:bg-gradient-to-bl group-hover:from-lime-500 group-hover:via-emerald-500 group-hover:to-sky-600
+            group-hover:ring-lime-400
+            ${hoverIndex === idx ? "ring-4 shadow-[0_0_30px_8px_rgba(22,163,74,0.95),inset_0_0_30px_6px_rgba(22,163,74,0.8)]" : ""}
+            backdrop-blur-[14px] backdrop-saturate-200
+            `
+          }
+          role="img"
+          aria-label={item.name}
+        >
+          {/* Inner animated gradient circle overlay */}
+          <div
+            className={`
+              absolute inset-2 rounded-full 
+              bg-gradient-to-r from-lime-400 via-emerald-400 to-sky-500 
+              opacity-30
+              animate-gradient-x
+              pointer-events-none
+              ${hoverIndex === idx ? "opacity-50" : ""}
+            `}
+            style={{ filter: "blur(10px)" }}
+          />
+          {/* Icon with floating glow animation */}
+          <motion.span
+            className="relative z-10 text-white text-4xl drop-shadow-lg select-none"
+            animate={
+              hoverIndex === idx
+                ? { y: [0, -8, 0], scale: [1, 1.15, 1] }
+                : { y: 0, scale: 1 }
+            }
+            transition={{ duration: 2, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
+          >
+            {item.icon ? item.icon : "🎓"}
+          </motion.span>
+        </div>
+
+        {/* Name */}
+        <span className="mt-5 text-base md:text-lg font-extrabold text-emerald-900 drop-shadow-md group-hover:text-lime-700 transition-colors duration-300">
+          {item.name}
+        </span>
+
+        {/* Description */}
+        <p
+          id={`desc-${idx}`}
+          className="mt-3 text-center text-sm md:text-base text-sky-900 font-semibold leading-relaxed min-h-[4rem] px-3"
+        >
+          {item.desc}
+        </p>
+
+        {/* Learn More button */}
+        <AnimatePresence>
+          {hoverIndex === idx && (
+            <motion.a
+              href={item.link ? item.link : "./contact"}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.35 }}
+              className="mt-3 px-4 py-1.5 rounded-full bg-lime-500/90 text-white font-bold text-xs tracking-wide shadow-md inline-block hover:bg-emerald-600 focus:bg-lime-700 transition"
+              tabIndex={-1}
+            >
+              Learn More
+            </motion.a>
+          )}
+        </AnimatePresence>
+
+        {/* Floating tooltip */}
+        <AnimatePresence>
+          {hoverIndex === idx && (
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 12 }}
+              transition={{ duration: 0.23 }}
+              className="absolute -top-24 left-1/2 -translate-x-1/2 w-56 px-4 py-3 bg-gradient-to-br from-emerald-600 to-lime-500 ring-4 ring-lime-300 text-white rounded-xl text-center text-sm font-semibold shadow-2xl pointer-events-none z-40"
+              role="tooltip"
+            >
+              {item.desc}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+    ))}
+  </div>
+
+  {/* Custom animation for gradient shifting */}
+  <style>
+    {`
+      @keyframes gradient-x {
+        0%, 100% {
+          background-position: 0% center;
+        }
+        50% {
+          background-position: 100% center;
+        }
+      }
+      .animate-gradient-x {
+        background-size: 200% 200%;
+        animation: gradient-x 6s ease-in-out infinite;
+      }
+    `}
+  </style>
+</section>
+
 
       {/* Enquiry Form */}
       <section className="py-20 px-6 bg-gradient-to-br from-[#d1fae5] via-[#ecfeff] to-[#bae6fd]">
