@@ -28,7 +28,7 @@ export default function Page() {
           backdropFilter: "blur(10px)",
           WebkitBackdropFilter: "blur(10px)",
           userSelect: "none",
-          marginTop: "3rem",
+          marginTop: "6rem",
           color: "#6e2648",
         }}
       >
@@ -187,21 +187,6 @@ export default function Page() {
         </section>
       </main>
 
-      <footer
-        style={{
-          marginTop: "auto",
-          padding: "1.8rem 1rem",
-          width: "100%",
-          textAlign: "center",
-          fontSize: "0.9rem",
-          color: "rgba(125, 67, 114, 0.7)",
-          userSelect: "none",
-          fontWeight: 600,
-          letterSpacing: "0.05em",
-        }}
-      >
-        © 2025 Engineering Streams Directory. All rights reserved.
-      </footer>
     </div>
   );
 }

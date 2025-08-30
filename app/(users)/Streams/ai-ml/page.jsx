@@ -26,7 +26,7 @@ export default function Page() {
           borderRadius: "18px",
           boxShadow: "0 12px 40px rgba(255,140,105,0.4)",
           textAlign: "center",
-          marginTop: "4rem",
+          marginTop: "6rem",
           userSelect: "none",
         }}
       >
@@ -194,21 +194,6 @@ export default function Page() {
         </section>
       </main>
 
-      <footer
-        style={{
-          marginTop: "auto",
-          padding: "1.8rem 1rem",
-          width: "100%",
-          textAlign: "center",
-          fontSize: "0.9rem",
-          color: "rgba(119, 50, 94, 0.75)",
-          userSelect: "none",
-          fontWeight: 600,
-          letterSpacing: "0.05em",
-        }}
-      >
-        © 2025 Engineering Streams Directory. All rights reserved.
-      </footer>
     </div>
   );
 }
