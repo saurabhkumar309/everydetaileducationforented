@@ -72,7 +72,7 @@ export default function Choose() {
               </p>
               <div className="text-center mt-6">
                 <a
-                  href="#"
+                  href="/contact"
                   className="inline-block bg-rose-500 hover:bg-rose-600 text-white px-6 py-2 rounded-full text-sm font-semibold transition font-poppins focus:outline-none focus:ring-4 focus:ring-rose-300 focus:ring-opacity-50"
                 >
                   Read More

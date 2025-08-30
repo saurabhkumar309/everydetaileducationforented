@@ -4,9 +4,8 @@ import BestFacilites from "@/app/(users)/about/Facilites/page";
 import StudentSay from "@/app/(users)/about/Student/page";
 import '@/app/globals.css';
 export default function aboutLayout({ children }) {
-  return (
-    <html lang="en">
-      <body >
+  return (<>
+  
       <h1>About Layout</h1>
         <h1>About Layout</h1>
         {children}
@@ -14,7 +13,7 @@ export default function aboutLayout({ children }) {
        <MostPopularCourses />
        <BestFacilites />
        <StudentSay />
-      </body>
-    </html>
+ 
+    </>
   );
 }
