@@ -127,15 +127,16 @@ const medicalLinks = [
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=..."
-                width="100%"
-                height="220"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                title="Office Location"
-              />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.051615644638!2d85.10604974048695!3d25.636412377524817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5935233b9d87%3A0xc52fe22e11082ef0!2sEvery%20Detail%20Education%20-%20Best%20Educational%20Consultant%20For%20Engineering%20In%20Patna%20%7C%7C%20Best%20Admission%20Consultancy%20In%20Patna.!5e0!3m2!1sen!2sin!4v1756535246606!5m2!1sen!2sin"
+         width="100%" 
+         height="220" 
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+           title ="Office Location">
+          </iframe>
+              
             </motion.div>
           </section>
         </div>
