@@ -5,14 +5,11 @@ import '@/app/globals.css';
 
 export default function StreamsLayout({ children }) {
   return (
-    <html lang="en" className="font-inter">
-      <body className="bg-white text-gray-800">
-        <div id="blog-layout-root" className="min-h-screen flex flex-col">
+   <><div id="blog-layout-root" className="min-h-screen flex flex-col">
           {children}
       
         
         </div>
-      </body>
-    </html>
+    </>
   );
 }
