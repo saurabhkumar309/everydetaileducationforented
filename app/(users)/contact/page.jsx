@@ -109,7 +109,7 @@ export default function ContactUs() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* Contact Info */}
  <motion.div
-      className="space-y-14 bg-gradient-to-br from-white/90 via-white/80 to-white/70 backdrop-blur-lg p-16 rounded-[36px] shadow-[0_25px_50px_rgba(99,102,241,0.15)] border border-indigo-200 max-w-md mx-auto md:max-w-full"
+      className="space-y-14 bg-gradient-to-br from-white/90 via-white/80 to-white/70 backdrop-blur-lg p-10 sm:p-16 rounded-[36px] shadow-[0_25px_50px_rgba(99,102,241,0.15)] border border-indigo-200 max-w-lg sm:max-w-4xl mx-auto"
       initial={{ opacity: 0, x: -70 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -141,7 +141,6 @@ export default function ContactUs() {
         delay={0.55}
       />
     </motion.div>
-
         {/* Contact Form */}
         <motion.form
           onSubmit={handleSubmit}
@@ -210,17 +209,17 @@ export default function ContactUs() {
   );
 }
 
-function ContactInfoItem({ icon: Icon, label, value ,delay = 0 }) {
+function ContactInfoItem({ icon: Icon, label, value, delay }) {
   return (
-   <motion.div
-      className="flex items-start space-x-6 group cursor-default"
+    <motion.div
+      className="flex flex-col sm:flex-row sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 group cursor-default"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay, ease: "easeOut" }}
+      transition={{ duration: 0.6, delay, ease: "easeOut" }}
       whileHover={{ scale: 1.05 }}
     >
       <motion.div
-        className="p-5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 text-white shadow-lg flex items-center justify-center transform transition-transform duration-500"
+        className="p-5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 text-white shadow-lg flex items-center justify-center transform transition-transform duration-500 min-w-[64px] min-h-[64px]"
         whileHover={{ scale: 1.2, rotate: 10 }}
       >
         <Icon className="text-4xl drop-shadow-md" />
@@ -234,7 +233,7 @@ function ContactInfoItem({ icon: Icon, label, value ,delay = 0 }) {
           {label}
         </motion.h4>
         <motion.p
-          className="mt-1 text-gray-700 font-medium text-md leading-relaxed max-w-xs"
+          className="mt-1 text-gray-700 font-medium text-md leading-relaxed max-w-xs sm:max-w-md"
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: delay + 0.2, duration: 0.6 }}
@@ -246,8 +245,8 @@ function ContactInfoItem({ icon: Icon, label, value ,delay = 0 }) {
           initial={{ scaleX: 0, opacity: 0 }}
           whileHover={{ scaleX: 1, opacity: 1 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          style={{ originX: 0 }}
-        ></motion.div>
+          style={{ transformOrigin: "left" }}
+        />
       </div>
     </motion.div>
   );
