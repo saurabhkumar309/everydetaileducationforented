@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SAAT2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-pink-50 via-yellow-50 to-orange-100 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-br from-pink-50 via-yellow-50 to-orange-100 p-18 sm:p-19">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-6 sm:p-12">
         <h1 className="text-3xl sm:text-5xl font-black bg-gradient-to-r from-orange-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent text-center mb-6">
           SAAT 2025 (Siksha ‘O’ Anusandhan Admission Test)
@@ -13,16 +13,7 @@ export default function SAAT2025() {
             SAAT is a national-level entrance exam conducted by Siksha ‘O’ Anusandhan University for UG and PG admissions (including BTech). Held annually in both online and offline modes across 62 test centers, it covers a wide range of programs.
           </p>
         </section>
-        <section className="mb-6">
-          <h2 className="text-xl font-bold mb-2">Important Dates</h2>
-          <ul className="list-disc pl-4 text-sm sm:text-base">
-            <li><strong>Application Open:</strong> February 1, 2025</li>
-            <li><strong>Application Close:</strong> Last week of June 2025</li>
-            <li><strong>Admit Card Release:</strong> June 2025</li>
-            <li><strong>Exam Window:</strong> June 2025 (expected)</li>
-            <li><strong>Results:</strong> July 2025</li>
-          </ul>
-        </section>
+       
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Eligibility Criteria</h2>
           <ul className="list-disc pl-4 text-sm sm:text-base">

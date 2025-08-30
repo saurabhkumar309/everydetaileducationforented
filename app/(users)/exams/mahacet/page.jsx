@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MHTCET2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-green-50 via-lime-100 to-yellow-100 p-6 sm:p-12">
+    <main className="min-h-screen bg-gradient-to-br from-green-50 via-lime-100 to-yellow-100 p-18 sm:p-19">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-8">
         <h1 className="text-4xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-lime-600 to-yellow-600">
           MHT CET 2025
@@ -36,34 +36,7 @@ export default function MHTCET2025() {
           </ul>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Important Dates (Tentative)</h2>
-          <table className="w-full text-left text-gray-700 border border-gray-300 rounded-md">
-            <tbody>
-              <tr className="border-b border-gray-300">
-                <td className="p-3 font-semibold">Application Start Date</td>
-                <td className="p-3">December 30, 2024</td>
-              </tr>
-              <tr className="border-b border-gray-300 bg-gray-50">
-                <td className="p-3 font-semibold">Application End Date</td>
-                <td className="p-3">February 15, 2025</td>
-              </tr>
-              <tr className="border-b border-gray-300">
-                <td className="p-3 font-semibold">Exam Date (PCB)</td>
-                <td className="p-3">April 9 to 17, 2025</td>
-              </tr>
-              <tr className="border-b border-gray-300 bg-gray-50">
-                <td className="p-3 font-semibold">Exam Date (PCM)</td>
-                <td className="p-3">April 19 to 27, 2025</td>
-              </tr>
-              <tr>
-                <td className="p-3 font-semibold">Result Declaration</td>
-                <td className="p-3">June 16, 2025</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
+       
         <section>
           <h2 className="text-2xl font-bold mb-4">How to Apply</h2>
           <p className="text-gray-700 mb-4">

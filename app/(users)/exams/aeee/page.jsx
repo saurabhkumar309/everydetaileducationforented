@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AEEE2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-teal-50 via-blue-100 to-indigo-200 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-br from-teal-50 via-blue-100 to-indigo-200 p-10 sm:p-16">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-6 sm:p-12">
         <h1 className="text-3xl sm:text-5xl font-black bg-gradient-to-r from-teal-600 via-blue-500 to-indigo-500 bg-clip-text text-transparent text-center mb-6">
           AEEE 2025 (Amrita Engineering Entrance Exam)
@@ -13,18 +13,7 @@ export default function AEEE2025() {
             AEEE is Amrita Vishwa Vidyapeetham’s university-level entrance exam for BTech admissions. Conducted in multiple phases and exclusively as a Computer Based Test (CBT), it welcomes aspirants from across India.
           </p>
         </section>
-        <section className="mb-6">
-          <h2 className="text-xl font-bold mb-2">Important Dates</h2>
-          <ul className="list-disc pl-4 text-sm sm:text-base">
-            <li><strong>Registration Start:</strong> October 22, 2024</li>
-            <li><strong>Phase 1 Registration End:</strong> January 30, 2025</li>
-            <li><strong>Slot Booking Phase 1:</strong> January 17–25, 2025</li>
-            <li><strong>Admit Card (Phase 1):</strong> January 27, 2025</li>
-            <li><strong>Phase 1 Exam:</strong> February 1–3, 2025</li>
-            <li><strong>Results (Phase 1):</strong> February 9, 2025</li>
-            <li><strong>Rank List/Counseling:</strong> May 2025</li>
-          </ul>
-        </section>
+     
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Eligibility Criteria</h2>
           <ul className="list-disc pl-4 text-sm sm:text-base">

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function JEEMain2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 p-18 sm:p-19">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-6 sm:p-12">
         <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-700 via-blue-600 to-indigo-500 bg-clip-text text-transparent">
           JEE Main 2025
@@ -42,7 +42,7 @@ export default function JEEMain2025() {
           </p>
           <div className="flex justify-center mt-6">
             <a
-              href="https://jeemain.nta.nic.in/webinfo2023/Page/Page?PageId=1&LangId=P"
+              href="https://jeemain.nta.nic.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 rounded-full bg-gradient-to-r from-indigo-700 via-blue-600 to-indigo-500 text-white font-bold shadow-lg hover:scale-105 transition"

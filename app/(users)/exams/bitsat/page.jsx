@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BITSAT2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-100 to-amber-100 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-100 to-amber-100 p-19 sm:p-18">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-6 sm:p-12">
         <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 bg-gradient-to-r from-yellow-600 via-orange-400 to-amber-500 bg-clip-text text-transparent">
           BITSAT 2025

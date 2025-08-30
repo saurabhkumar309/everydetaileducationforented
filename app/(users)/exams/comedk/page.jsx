@@ -2,7 +2,7 @@ import React from "react";
 
 export default function COMEDK2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-100 to-pink-100 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-100 to-pink-100 p-19 sm:p-18">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-6 sm:p-12">
         <h1 className="text-3xl sm:text-5xl font-black bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent text-center mb-6">
           COMEDK UGET 2025
@@ -13,18 +13,7 @@ export default function COMEDK2025() {
             The Consortium of Medical, Engineering and Dental Colleges of Karnataka (COMEDK) conducts the Undergraduate Entrance Test (UGET) 2025 for admission to engineering programs across India. It is a computer-based test held in 400 centers nationwide.
           </p>
         </section>
-        <section className="mb-6">
-          <h2 className="text-xl font-bold mb-2">Important Dates</h2>
-          <ul className="text-sm sm:text-base list-disc pl-4">
-            <li><strong>Application Start:</strong> February 3, 2025</li>
-            <li><strong>Mock Test Release:</strong> February 17, 2025</li>
-            <li><strong>Application End:</strong> March 15, 2025</li>
-            <li><strong>Editing Window:</strong> April 11–14, 2025</li>
-            <li><strong>Admit Card Download:</strong> April 30, 2025</li>
-            <li><strong>Exam Date:</strong> May 10, 2025</li>
-            <li><strong>Result:</strong> May 24, 2025</li>
-          </ul>
-        </section>
+    
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Eligibility Criteria</h2>
           <ul className="text-sm sm:text-base list-disc pl-4">

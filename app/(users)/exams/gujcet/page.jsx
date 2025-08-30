@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GUJCET2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-cyan-50 via-teal-100 to-green-100 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-br from-cyan-50 via-teal-100 to-green-100 p-18 sm:p-19">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-6 sm:p-12">
         <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 bg-gradient-to-r from-cyan-600 via-teal-500 to-green-600 bg-clip-text text-transparent">
           GUJCET 2025
@@ -45,7 +45,7 @@ export default function GUJCET2025() {
           </p>
           <div className="flex justify-center mt-6">
             <a
-              href="https://gujcet.gseb.org/"
+              href="https://gujcet.net/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 rounded-full bg-gradient-to-r from-cyan-600 via-teal-500 to-green-600 text-white font-bold shadow-lg hover:scale-105 transition"

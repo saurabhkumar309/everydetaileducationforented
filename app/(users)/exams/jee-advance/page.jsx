@@ -2,7 +2,7 @@ import React from "react";
 
 export default function JEEAdvanced2025() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-red-50 via-pink-100 to-purple-100 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-br from-red-50 via-pink-100 to-purple-100 p-18 sm:p-19">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-6 sm:p-12">
         <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-6 bg-gradient-to-r from-red-600 via-pink-500 to-purple-600 bg-clip-text text-transparent">
           JEE Advanced 2025

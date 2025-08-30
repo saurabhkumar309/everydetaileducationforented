@@ -38,13 +38,13 @@ const bgGradients = [
 
 export default function EngineeringExams() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 p-6 sm:p-12">
+    <main className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 p-26 sm:p-26">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl sm:text-6xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 drop-shadow-lg">
           Top Engineering Entrance Exams in India 2025
         </h1>
         <p className="text-center mb-12 max-w-3xl mx-auto text-lg sm:text-xl text-gray-700">
-          Discover the comprehensive list of major online engineering entrance exams for 2025. Click any card below for detailed exam info, dates, eligibility, and application trends.
+          Discover the comprehensive list of major online engineering entrance exams for 2025. Click any card below for detailed exam info, eligibility, and application trends.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
           {exams.map((exam, idx) => (
