@@ -4,19 +4,20 @@ import React from "react";
 
 // Data for Engineering Streams
 const engineeringStreams = [
-  {
-    name: "Mechanical Engineering",
-    url: "/Streams/mechanical-engineering",
-    color: "#ff914d",
-    icon: "⚙️",
-    about: "Focuses on design, manufacture & maintenance of mechanical systems."
-  },
-  {
-    name: "Civil Engineering",
-    url: "/Streams/civil-engineering",
-    color: "#1e90ff",
-    icon: "🏗️",
-    about: "Deals with design, construction, and maintenance of infrastructure."
+ // IT & Related
+ {
+    name: "CSE",
+    url: "/Streams/cse",
+    color: "#2a2a72",
+    icon: "💻",
+    about: "Core computer science: software, algorithms, and system design."
+  }, 
+ {
+    name: "Information Technology (IT)",
+    url: "/Streams/information-technology",
+    color: "#3a86ff",
+    icon: "🖥️",
+    about: "Emphasizes IT infrastructure, software & network management."
   },
   {
     name: "CSE (Cloud Computing)",
@@ -39,6 +40,21 @@ const engineeringStreams = [
     icon: "💼",
     about: "Blends computer science with business systems for tech-business roles."
   },
+     {
+        name: "Software Engineering",
+        url: "/Streams/software-engineering",
+        icon: "💾",
+        color: "#3a86ff",
+        about: "Focuses on methodologies for software system development."
+      },
+      {
+        name: "Information Security",
+        url: "/Streams/information-security",
+        icon: "🛡️",
+        color: "#3a86ff",
+        about: "Focuses on network, data, and application security."
+      },
+
   {
     name: "CSE Cyber Security",
     url: "/Streams/cyber-security",
@@ -60,13 +76,7 @@ const engineeringStreams = [
     icon: "📊",
     about: "Focuses on analytics, big data, and data visualization."
   },
-  {
-    name: "CSE",
-    url: "/Streams/cse",
-    color: "#2a2a72",
-    icon: "💻",
-    about: "Core computer science: software, algorithms, and system design."
-  },
+  
   // EC/EE/EEE and related
   {
     name: "Electronics & Communication (ECE)",
@@ -124,14 +134,21 @@ const engineeringStreams = [
     icon: "⚡",
     about: "Combines electrical systems with electronics and control engineering."
   },
-  // IT & Related
-  {
-    name: "Information Technology (IT)",
-    url: "/Streams/information-technology",
-    color: "#3a86ff",
-    icon: "🖥️",
-    about: "Emphasizes IT infrastructure, software & network management."
+    {
+    name: "Mechanical Engineering",
+    url: "/Streams/mechanical-engineering",
+    color: "#ff914d",
+    icon: "⚙️",
+    about: "Focuses on design, manufacture & maintenance of mechanical systems."
   },
+  {
+    name: "Civil Engineering",
+    url: "/Streams/civil-engineering",
+    color: "#1e90ff",
+    icon: "🏗️",
+    about: "Deals with design, construction, and maintenance of infrastructure."
+  },
+ 
   // Others
   {
     name: "Chemical Engineering",
@@ -147,20 +164,6 @@ const engineeringStreams = [
     icon: "🧬",
     about: "Integrates biology with technology for pharmaceuticals & research."
   },
-   {
-        name: "Software Engineering",
-        url: "/Streams/software-engineering",
-        icon: "💾",
-        color: "#3a86ff",
-        about: "Focuses on methodologies for software system development."
-      },
-      {
-        name: "Information Security",
-        url: "/Streams/information-security",
-        icon: "🛡️",
-        color: "#3a86ff",
-        about: "Focuses on network, data, and application security."
-      },
 
   {
     name: "Biomedical Engineering",
@@ -315,7 +318,8 @@ export default function Page() {
           fontSize: "2.5rem",
           color: "#2a2a72",
           letterSpacing: "1px",
-          marginBottom: "0.4rem"
+          marginBottom: "0.4rem",
+          marginTop: "4.5rem",
         }}>
           Top Engineering Streams in 2025
         </h1>
