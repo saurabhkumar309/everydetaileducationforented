@@ -108,12 +108,39 @@ export default function ContactUs() {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* Contact Info */}
-        <motion.div className="space-y-10 bg-white/60 p-12 rounded-3xl shadow-2xl border">
-          <ContactInfoItem icon={FaMobileAlt} label="Phone No." value="+91 9430018930" />
-          <ContactInfoItem icon={FaEnvelopeOpen} label="E-mail" value="support@everydetaileducation.in" />
-          <ContactInfoItem icon={FaMapMarkerAlt} label="Address" value="Kabir Market, Near Loyola HS, Kurji, Patna 800013" />
-          <ContactInfoItem icon={FaClock} label="Opening Hours" value="Monday - Sunday (10:00 AM to 06:00 PM)" />
-        </motion.div>
+ <motion.div
+      className="space-y-14 bg-gradient-to-br from-white/90 via-white/80 to-white/70 backdrop-blur-lg p-16 rounded-[36px] shadow-[0_25px_50px_rgba(99,102,241,0.15)] border border-indigo-200 max-w-md mx-auto md:max-w-full"
+      initial={{ opacity: 0, x: -70 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      whileHover={{ scale: 1.03, boxShadow: "0 30px 60px rgba(99,102,241,0.3)" }}
+      whileTap={{ scale: 0.98 }}
+    >
+      <ContactInfoItem
+        icon={FaMobileAlt}
+        label="Phone No."
+        value="+91 9430018930"
+        delay={0.1}
+      />
+      <ContactInfoItem
+        icon={FaEnvelopeOpen}
+        label="E-mail"
+        value="support@everydetaileducation.in"
+        delay={0.25}
+      />
+      <ContactInfoItem
+        icon={FaMapMarkerAlt}
+        label="Address"
+        value="Kabir Market, Near Loyola HS, Kurji, Patna 800013"
+        delay={0.4}
+      />
+      <ContactInfoItem
+        icon={FaClock}
+        label="Opening Hours"
+        value="Monday - Sunday (10:00 AM to 06:00 PM)"
+        delay={0.55}
+      />
+    </motion.div>
 
         {/* Contact Form */}
         <motion.form
@@ -183,15 +210,46 @@ export default function ContactUs() {
   );
 }
 
-function ContactInfoItem({ icon: Icon, label, value }) {
+function ContactInfoItem({ icon: Icon, label, value ,delay = 0 }) {
   return (
-    <div className="flex items-start space-x-6">
-      <Icon className="text-4xl flex-shrink-0 mt-1" />
+   <motion.div
+      className="flex items-start space-x-6 group cursor-default"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay, ease: "easeOut" }}
+      whileHover={{ scale: 1.05 }}
+    >
+      <motion.div
+        className="p-5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 text-white shadow-lg flex items-center justify-center transform transition-transform duration-500"
+        whileHover={{ scale: 1.2, rotate: 10 }}
+      >
+        <Icon className="text-4xl drop-shadow-md" />
+      </motion.div>
       <div>
-        <h4 className="font-semibold">{label}</h4>
-        <p>{value}</p>
+        <motion.h4
+          className="font-extrabold text-xl text-indigo-900 group-hover:text-purple-700 transition-colors duration-500"
+          whileHover={{ x: 10 }}
+          transition={{ type: "spring", stiffness: 200, damping: 20 }}
+        >
+          {label}
+        </motion.h4>
+        <motion.p
+          className="mt-1 text-gray-700 font-medium text-md leading-relaxed max-w-xs"
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: delay + 0.2, duration: 0.6 }}
+        >
+          {value}
+        </motion.p>
+        <motion.div
+          className="mt-2 h-1 w-16 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full opacity-0"
+          initial={{ scaleX: 0, opacity: 0 }}
+          whileHover={{ scaleX: 1, opacity: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          style={{ originX: 0 }}
+        ></motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
