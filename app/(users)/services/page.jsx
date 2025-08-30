@@ -44,10 +44,10 @@ export default function CollegeSelection() {
                 <FaCheckCircle className="text-pink-600" /> Courses like B.Tech, MBBS, BBA, BCA, MBA, and more
               </li>
               <li className="flex items-center gap-3">
-                <FaCheckCircle className="text-pink-600" /> India & Abroad admission guidance
+                <FaCheckCircle className="text-pink-600" /> India admission guidance
               </li>
               <li className="flex items-center gap-3">
-                <FaCheckCircle className="text-pink-600" /> Free counseling & eligibility checks
+                <FaCheckCircle className="text-pink-600" /> Counseling & eligibility checks
               </li>
             </ul>
             <div className="mt-10">
