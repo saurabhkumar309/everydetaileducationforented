@@ -410,15 +410,12 @@ const counsellingData = [
   { name: "MP-DTE", desc: "Madhya Pradesh Directorate of Technical Education" },
   { name: "Rajasthan REAP", desc: "Rajasthan Engineering Admission Process" },
   { name: "COMED-K", desc: "Consortium of Medical, Engineering and Dental Colleges of Karnataka" },
-  { name: "MHT-CET", desc: "Maharashtra Common Entrance Test" },
   { name: "WBJEE", desc: "West Bengal Joint Entrance Examination" },
   { name: "BCECE", desc: "Bihar Combined Entrance Competitive Examination" },
-  { name: "Odisha JEE", desc: "Odisha Joint Entrance Examination" },
   { name: "MMMUT Gorakhpur", desc: "Madan Mohan Malaviya University of Technology" },
   { name: "JAC Chandigarh", desc: "Joint Admission Counselling Chandigarh" },
   { name: "HBTU Kanpur", desc: "Harcourt Butler Technical University" },
-  { name: "HSTES Haryana", desc: "Haryana State Technical Education Society" },
-  { name: "JIIT Noida", desc: "Jaypee Institute of Information Technology" },
+
 ];
 const students = [
   { name: 'Divyanshu', college: 'NIT Patna', image: '/divyanshu.png', story: "I am grateful to Every Detail Education for their invaluable support in securing my seat in the BTech program at NIT Patna. Their knowledgeable counselors provided personalized guidance on the admission process and entrance exams, making a significant difference in my preparation. I highly recommend their services to anyone seeking academic counseling. Thank you for your amazing support!" },
@@ -689,34 +686,7 @@ export default function EnquiryForm() {
         </div>
       </section>
 
-      {/* Counselling Section
-      <section className="relative py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-green-200 overflow-hidden px-6">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-green-300 rounded-full blur-3xl opacity-10 pointer-events-none"></div>
-        <div className="absolute bottom-20 right-10 w-72 h-72 bg-emerald-400 rounded-full blur-3xl opacity-10 pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto">
-          <motion.h2 className="text-4xl font-extrabold text-center text-gray-800 mb-6 tracking-wide"
-            initial={{ opacity: 0, y: -30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            OUR <span className="text-green-600">COUNSELLING</span> SUPPORT
-          </motion.h2>
-          <motion.p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto text-lg"
-            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.2, duration: 0.6 }}>
-            We provide expert guidance for various entrance exams and counselling processes across India.
-          </motion.p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
-            {counsellingData.map((item, idx) => (
-              <motion.div key={idx} className="flex flex-col items-center text-center cursor-pointer"
-                initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: idx * 0.05 }} whileHover={{ scale: 1.1 }}>
-                <motion.div className="bg-white rounded-full shadow-lg p-5 border border-gray-200 ring-2 ring-transparent hover:ring-green-400 hover:shadow-green-300 transition-all duration-300"
-                  whileHover={{ rotate: 5 }}>
-                  <Image src={item.image} alt={item.name} width={90} height={90} className="rounded-full object-contain" draggable={false} />
-                </motion.div>
-                <p className="mt-3 text-sm font-semibold text-gray-700 select-none">{item.name}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
+      {/* Counselling Support Section */}
  <section
   className="relative py-24 px-6 bg-gradient-to-br from-sky-50 via-emerald-50 to-lime-50 overflow-hidden min-h-screen"
   aria-label="Counselling Support Section"

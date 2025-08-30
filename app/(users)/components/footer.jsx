@@ -133,7 +133,7 @@ const medicalLinks = [
           style={{ border: 0 }}
           allowFullScreen={true}
           loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
            title ="Office Location">
           </iframe>
               
