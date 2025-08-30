@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useState, useTransition,useRef } from 'react';
 import Image from 'next/image';
 import Tilt from 'react-parallax-tilt';
 import { motion ,AnimatePresence } from 'framer-motion';
@@ -52,23 +52,355 @@ const courseList = [
   { title: 'Science & Arts', description: 'PCM • PCB • Humanities', icon: <FaGraduationCap />, color: 'from-lime-200 to-green-300' },
 ];
 
-const topColleges = [
-  { name: 'IIT Bombay', category: 'Engineering', image: '/iit bombay.jpeg' },
-  { name: 'IIT MADRAS', category: 'Engineering', image: '/nit-trichy.png' },
-  { name: 'IIM Bangalore', category: 'Management', image: '/IIM_Bangalore_Logo.png' },
-  { name: 'IIT Delhi', category: 'Engineering', image: '/IIT Delhi logo.png' },
-  { name: 'BITS Pilani', category: 'Engineering', image: '/BITS Pilani logo.png' },
-  { name: 'IIT Guwahati', category: 'Engineering', image: '/IIT Guwahati logo.png' },
+const engineeringStreams = [
+  {
+    name: "Mechanical Engineering",
+    url: "/Streams/mechanical-engineering",
+    color: "#ff914d",
+    icon: "⚙️",
+    about: "Focuses on design, manufacture & maintenance of mechanical systems.",
+  },
+  {
+    name: "Civil Engineering",
+    url: "/Streams/civil-engineering",
+    color: "#1e90ff",
+    icon: "🏗️",
+    about: "Deals with design, construction, and maintenance of infrastructure.",
+  },
+  {
+    name: "CSE (Cloud Computing)",
+    url: "./Streams/Cloud-Computing",
+    color: "#5d9cec",
+    icon: "☁️",
+    about: "Emphasizes scalable computing, cloud architecture & cloud security.",
+  },
+  {
+    name: "CSE (IoT)",
+    url: "/Streams/iot",
+    color: "#4dd599",
+    icon: "🌐",
+    about: "Integrates CS engineering with smart devices & IoT applications.",
+  },
+  {
+    name: "CSE (CSBS)",
+    url: "/Streams/csbs",
+    color: "#b967ff",
+    icon: "💼",
+    about: "Blends computer science with business systems for tech-business roles.",
+  },
+  {
+    name: "CSE Cyber Security",
+    url: "/Streams/cyber-security",
+    color: "#ff4d6d",
+    icon: "🛡️",
+    about: "Focuses on network security, ethical hacking & data privacy.",
+  },
+  {
+    name: "CSE (AI & ML)",
+    url: "/Streams/ai-ml",
+    color: "#ffd700",
+    icon: "🤖",
+    about: "Covers artificial intelligence, machine learning & deep learning.",
+  },
+  {
+    name: "Data Science",
+    url: "/Streams/data-science",
+    color: "#5cdb95",
+    icon: "📊",
+    about: "Focuses on analytics, big data, and data visualization.",
+  },
+  {
+    name: "CSE",
+    url: "/Streams/cse",
+    color: "#2a2a72",
+    icon: "💻",
+    about: "Core computer science: software, algorithms, and system design.",
+  },
+  // EC/EE/EEE and related
+  {
+    name: "Electronics & Communication (ECE)",
+    url: "/Streams/ece",
+    color: "#f54260",
+    icon: "📡",
+    about: "Covers electronics, telecommunications, and embedded systems.",
+  },
+  {
+    name: "Embedded Systems",
+    url: "/Streams/embedded-systems",
+    color: "#f54260",
+    icon: "📟",
+    about: "Focuses on microcontrollers, hardware-software integration.",
+  },
+  {
+    name: "VLSI Design",
+    url: "/Streams/vlsi",
+    color: "#f54260",
+    icon: "🔲",
+    about: "Covers semiconductor fabrication, circuit and chip design.",
+  },
+  {
+    name: "Signal Processing",
+    url: "/Streams/signal-processing",
+    color: "#f54260",
+    icon: "🎚️",
+    about: "Covers analog/digital signal analysis, filtering, and applications.",
+  },
+  {
+    name: "Electrical Engineering (EE)",
+    url: "/Streams/ee",
+    color: "#f7b32b",
+    icon: "🔌",
+    about: "Focuses on electric circuits, machines, power systems & automation.",
+  },
+  {
+    name: "Power Systems",
+    url: "/Streams/power-systems",
+    color: "#f7b32b",
+    icon: "⚡",
+    about: "Focuses on electric power generation, transmission, and distribution.",
+  },
+  {
+    name: "Control Systems",
+    url: "/Streams/control-systems",
+    color: "#f7b32b",
+    icon: "🎛️",
+    about: "Deals with automation, system dynamics and robotics.",
+  },
+  {
+    name: "Electrical & Electronics Engineering (EEE)",
+    url: "/Streams/eee",
+    color: "#1abc9c",
+    icon: "⚡",
+    about: "Combines electrical systems with electronics and control engineering.",
+  },
+  // IT & Related
+  {
+    name: "Information Technology (IT)",
+    url: "/Streams/information-technology",
+    color: "#3a86ff",
+    icon: "🖥️",
+    about: "Emphasizes IT infrastructure, software & network management.",
+  },
+  // Others
+  {
+    name: "Chemical Engineering",
+    url: "/Streams/chemical-engineering",
+    color: "#fb3640",
+    icon: "⚗️",
+    about: "Applies chemical principles to manufacturing and production.",
+  },
+  {
+    name: "Biotechnology",
+    url: "/Streams/biotechnology",
+    color: "#00b894",
+    icon: "🧬",
+    about: "Integrates biology with technology for pharmaceuticals & research.",
+  },
+  {
+    name: "Software Engineering",
+    url: "/Streams/software-engineering",
+    icon: "💾",
+    color: "#3a86ff",
+    about: "Focuses on methodologies for software system development.",
+  },
+  {
+    name: "Information Security",
+    url: "/Streams/information-security",
+    icon: "🛡️",
+    color: "#3a86ff",
+    about: "Focuses on network, data, and application security.",
+  },
+  {
+    name: "Biomedical Engineering",
+    url: "/Streams/biomedical-engineering",
+    color: "#ff758f",
+    icon: "🦾",
+    about: "Applies engineering to healthcare, medical devices & diagnostics.",
+  },
+  {
+    name: "Aerospace Engineering",
+    url: "/Streams/aerospace-engineering",
+    color: "#2962ff",
+    icon: "✈️",
+    about: "Focuses on design & development of aircraft and spacecraft.",
+  },
+  {
+    name: "Automobile Engineering",
+    url: "/Streams/automobile-engineering",
+    color: "#c0b283",
+    icon: "🚗",
+    about: "Designs, develops, tests & manufactures vehicles.",
+  },
+  {
+    name: "Mechatronics Engineering",
+    url: "/Streams/mechatronics",
+    color: "#9b59b6",
+    icon: "🤖",
+    about: "Integrates mechanics, electronics, and computing for automation.",
+  },
+  {
+    name: "Environmental Engineering",
+    url: "/Streams/environmental-engineering",
+    color: "#43aa8b",
+    icon: "🌱",
+    about: "Focuses on sustainable solutions for environmental challenges.",
+  },
+  {
+    name: "Instrumentation Engineering",
+    url: "/Streams/instrumentation-engineering",
+    color: "#7766c6",
+    icon: "📈",
+    about: "Specializes in measurement, automation, and process control.",
+  },
+  {
+    name: "Mining Engineering",
+    url: "/Streams/mining-engineering",
+    color: "#838b8b",
+    icon: "⛏️",
+    about: "Focuses on extraction and processing of minerals and resources.",
+  },
+  {
+    name: "Marine Engineering",
+    url: "/Streams/marine-engineering",
+    color: "#0096c7",
+    icon: "🚢",
+    about: "Design and maintenance of ships, submarines, and marine systems.",
+  },
+  {
+    name: "Petroleum Engineering",
+    url: "/Streams/petroleum-engineering",
+    color: "#8d5524",
+    icon: "🛢️",
+    about: "Deals with exploration and extraction of oil and gas resources.",
+  },
 ];
+// Enhanced Card UI Component with polished styling and responsive spacing
+const StreamCard = ({ stream }) => {
+return (
+<div
+style={{
+background: `linear-gradient(135deg, ${stream.color} 0%, #f9fafb 100%)`,
+borderRadius: "24px",
+boxShadow:
+"0 16px 40px rgba(0, 0, 0, 0.12), 0 6px 12px rgba(0, 0, 0, 0.06)",
+padding: "2.2rem 2rem 1.6rem 2rem",
+margin: "1.5rem auto",
+minWidth: "260px",
+maxWidth: "340px",
+flex: "1 1 320px",
+transition:
+"transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease",
+cursor: "pointer",
+position: "relative",
+display: "flex",
+flexDirection: "column",
+userSelect: "none",
+border: "2px solid transparent",
+}}
+className="stream-card"
+tabIndex="0"
+onClick={() => window.open(stream.url, "_blank")}
+onKeyDown={(e) => {
+if (e.key === "Enter") window.open(stream.url, "_blank");
+}}
+aria-label={`Read more about ${stream.name}`}
+onMouseEnter={(e) => {
+e.currentTarget.style.transform = "translateY(-12px) scale(1.12)";
+e.currentTarget.style.boxShadow =
+"0 28px 60px rgba(0,0,0,0.2), 0 10px 20px rgba(0,0,0,0.1)";
+e.currentTarget.style.borderColor = stream.color;
+}}
+onMouseLeave={(e) => {
+e.currentTarget.style.transform = "none";
+e.currentTarget.style.boxShadow =
+"0 16px 40px rgba(0, 0, 0, 0.12), 0 6px 12px rgba(0, 0, 0, 0.06)";
+e.currentTarget.style.borderColor = "transparent";
+}}
+>
+<div
+style={{
+fontSize: "3rem",
+marginBottom: "1.2rem",
+textAlign: "center",
+color: stream.color,
+filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.12))",
+userSelect: "none",
+}}
+>
+{stream.icon}
+</div>
+<div
+style={{
+fontWeight: "900",
+fontSize: "1.5rem",
+marginBottom: "0.7rem",
+textAlign: "center",
+color: "#2a2a2a",
+letterSpacing: "0.7px",
+userSelect: "none",
+textShadow: "0 2px 8px rgba(0,0,0,0.06)",
+}}
+>
+{stream.name}
+</div>
+<div
+style={{
+fontSize: "1.08rem",
+color: "#555555",
+minHeight: "52px",
+marginBottom: "1.5rem",
+textAlign: "center",
+flexGrow: 1,
+padding: "0 0.75rem",
+lineHeight: 1.45,
+fontWeight: "500",
+}}
+>
+{stream.about}
+</div>
+<a
+style={{
+display: "block",
+textAlign: "center",
+background: stream.color,
+color: "#fff",
+textDecoration: "none",
+borderRadius: "14px",
+fontWeight: "700",
+padding: "12px 0",
+fontSize: "1.1rem",
+maxWidth: "180px",
+margin: "auto",
+boxShadow: `0 8px 24px ${stream.color}aa`,
+transition: "background 0.3s ease, box-shadow 0.3s ease",
+userSelect: "none",
+letterSpacing: "0.6px",
+fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+cursor: "pointer",
+outline: "none",
+}}
+href={stream.url}
+target="_blank"
+rel="noopener noreferrer"
+tabIndex="-1"
+onClick={(e) => e.stopPropagation()}
+onMouseEnter={(e) => {
+e.currentTarget.style.background = "#121212";
+e.currentTarget.style.boxShadow = "0 10px 30px #121212cc";
+e.currentTarget.style.letterSpacing = "0.9px";
+}}
+onMouseLeave={(e) => {
+e.currentTarget.style.background = stream.color;
+e.currentTarget.style.boxShadow = `0 8px 24px ${stream.color}aa`;
+e.currentTarget.style.letterSpacing = "0.6px";
+}}
+>
+Explore Stream
+</a>
+</div>
+);
+};
 
-// const counsellingData = [
-//   { name: 'JOSAA', image: '/JOSAA.png' }, { name: 'CSAB', image: '/CSEB.png' }, { name: 'UPTU', image: '/UPTU.png' },
-//   { name: 'GGSIPU', image: '/JJ IPU-DELHI.png' }, { name: 'JAC Delhi', image: '/JAC Delhi.png' }, { name: 'MP-DTE', image: '/MP-DTE.png' },
-//   { name: 'Rajasthan REAP', image: '/Reap.png' }, { name: 'COMED-K', image: '/comedk.png' }, { name: 'MHT-CET', image: '/MHT-CET.png' },
-//   { name: 'WBJEE', image: '/WBJEE.png' }, { name: 'BCECE', image: '/bcece.png' }, { name: 'Odisha JEE', image: '/OJEE.png' },
-//   { name: 'MMMUT Gorakhpur', image: '/mmmut.png' }, { name: 'JAC Chandigarh', image: '/jac-chandigarh.png' }, { name: 'HBTU Kanpur', image: '/hbtu.png' },
-//   { name: 'HSTES Haryana', image: '/hstes.png' }, { name: 'JIIT Noida', image: '/JIIT-NOIDA.png' },
-// ];
 const counsellingData = [
   { name: "JOSAA", desc: "Joint Seat Allocation Authority" },
   { name: "CSAB", desc: "Central Seat Allocation Board" },
@@ -141,16 +473,22 @@ const students = [
 
 const slides = [
 
-  { src: '/video.mp4', isVideo: true },  // { src: '/banner1.png', isVideo: false },
+
   { src: '/banner2.png', isVideo: false },
   { src: '/banner3.png', isVideo: false },
-
+{ src: '/video.mp4', isVideo: true },  // { src: '/banner1.png', isVideo: false },
 ];
 
 
  
 
 export default function EnquiryForm() {
+
+// Main Page Component
+
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
     const [hoverIndex, setHoverIndex] = useState(null);
 
  const [isOpen, setIsOpen] = useState(false);
@@ -788,44 +1126,174 @@ export default function EnquiryForm() {
         </div>
       </div>
     </section>
-  
+ <div
+style={{
+background: "radial-gradient(circle at top left, #d5e4ff, #6aa0ff)",
+minHeight: "100vh",
+padding: "3rem 0 7rem",
+fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+overflowX: "hidden",
+}}
+>
+<header
+style={{
+textAlign: "center",
+padding: "0 1rem",
+userSelect: "none",
+marginBottom: "3rem",
+}}
+>
+<h1
+style={{
+fontSize: "3.4rem",
+color: "#1e3c72",
+letterSpacing: "2.3px",
+fontWeight: "900",
+marginBottom: "0.35rem",
+textShadow: "0 3px 10px rgba(30, 60, 114, 0.35)",
+}}
+>
+Top Engineering Streams in 2025
+</h1>
+<p
+style={{
+color: "#3c3c3c",
+fontSize: "1.25rem",
+maxWidth: "680px",
+margin: "auto",
+fontWeight: "600",
+letterSpacing: "0.35px",
+lineHeight: 1.5,
+}}
+>
+Discover the most in-demand and future-ready branches for your engineering career.
+</p>
+</header>
 
-      {/* Top Colleges */}
-      <section className="bg-gradient-to-tr from-[#f0fdfa] via-[#dcfce7] to-[#a7f3d0] py-20 px-6 relative">
-        <div className="max-w-7xl mx-auto">
-          <motion.h2 className="text-4xl font-bold text-center text-green-800 mb-4"
-            initial={{ opacity: 0, y: -30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            India&apos;s Top Colleges</motion.h2>
-          <p className="text-center text-gray-700 max-w-xl mx-auto mb-14 select-none">
-            We are associated with the best institutions in the country.
-          </p>
-          <Swiper modules={[Navigation, Autoplay]} navigation={{ nextEl: '.custom-next', prevEl: '.custom-prev' }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }} loop spaceBetween={30} slidesPerView={1}
-            breakpoints={{ 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} className="pb-12"
-          >
-            {topColleges.map((college, idx) => (
-              <SwiperSlide key={idx}>
-                <motion.div className="bg-white rounded-3xl shadow-lg p-6 text-center cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
-                  initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: idx * 0.1 }} whileHover={{ scale: 1.04 }}>
-                  <div className="flex justify-center mb-5">
-                    <Image src={college.image} alt={college.name} width={140} height={140} className="object-contain rounded-md" draggable={false} />
-                  </div>
-                  <h4 className="text-lg font-semibold text-gray-800">{college.name}</h4>
-                  <p className="text-sm text-gray-600 mt-1">{college.category}</p>
-                </motion.div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          {/* Custom Navigation Buttons */}
-          <div className="custom-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-gray-900 text-white rounded-full w-11 h-11 flex items-center justify-center cursor-pointer shadow-lg hover:bg-green-700 transition-colors duration-300 select-none">
-            ❮
-          </div>
-          <div className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-gray-900 text-white rounded-full w-11 h-11 flex items-center justify-center cursor-pointer shadow-lg hover:bg-green-700 transition-colors duration-300 select-none">
-            ❯
-          </div>
-        </div>
-      </section>
+  <section
+    style={{
+      maxWidth: "1300px",
+      margin: "auto",
+      position: "relative",
+      paddingBottom: "5rem",
+      paddingLeft: "1.5rem",
+      paddingRight: "1.5rem",
+    }}
+  >
+    <Swiper
+      modules={[Navigation, Autoplay]}
+      spaceBetween={32}
+      slidesPerView={1}
+      loop={true}
+      autoplay={{ delay: 3500, disableOnInteraction: false }}
+      breakpoints={{
+        480: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+        1400: { slidesPerView: 4 },
+      }}
+      navigation={{
+        prevEl: prevRef.current,
+        nextEl: nextRef.current,
+      }}
+      onSwiper={(swiper) => {
+        setTimeout(() => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.destroy();
+          swiper.navigation.init();
+          swiper.navigation.update();
+        });
+      }}
+      style={{ paddingBottom: "5rem" }}
+    >
+      {engineeringStreams.map((stream, idx) => (
+        <SwiperSlide key={stream.name + idx}>
+          <StreamCard stream={stream} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
 
+    {/* Custom Navigation Buttons */}
+    <button
+      ref={prevRef}
+      aria-label="Previous Slide"
+      style={{
+        position: "absolute",
+        left: "12px",
+        top: "50%",
+        transform: "translateY(-50%)",
+        zIndex: 40,
+        backgroundColor: "#1b365d",
+        color: "white",
+        borderRadius: "50%",
+        width: "48px",
+        height: "48px",
+        border: "none",
+        cursor: "pointer",
+        boxShadow: "0 10px 30px rgba(27, 54, 93, 0.6)",
+        transition: "background-color 0.3s ease, transform 0.2s ease",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "1.8rem",
+        userSelect: "none",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = "#3a63b1";
+        e.currentTarget.style.transform = "scale(1.1)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = "#1b365d";
+        e.currentTarget.style.transform = "none";
+      }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") prevRef.current?.click();
+      }}
+    >
+      ❮
+    </button>
+
+    <button
+      ref={nextRef}
+      aria-label="Next Slide"
+      style={{
+        position: "absolute",
+        right: "12px",
+        top: "50%",
+        transform: "translateY(-50%)",
+        zIndex: 40,
+        backgroundColor: "#1b365d",
+        color: "white",
+        borderRadius: "50%",
+        width: "48px",
+        height: "48px",
+        border: "none",
+        cursor: "pointer",
+        boxShadow: "0 10px 30px rgba(27, 54, 93, 0.6)",
+        transition: "background-color 0.3s ease, transform 0.2s ease",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "1.8rem",
+        userSelect: "none",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = "#3a63b1";
+        e.currentTarget.style.transform = "scale(1.1)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = "#1b365d";
+        e.currentTarget.style.transform = "none";
+      }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") nextRef.current?.click();
+      }}
+    >
+      ❯
+    </button>
+  </section>
+</div>
 
        {/* Floating Button */}
             <div
