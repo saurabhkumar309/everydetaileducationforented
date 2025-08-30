@@ -14,7 +14,7 @@ import { Navigation, Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import { Player } from "@lottiefiles/react-lottie-player";
+
 // REMOVED: import { enquiryAction } from '@/app/(users)/admission.enquiry';
 const handleDownload = () => {
    
